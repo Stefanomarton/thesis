@@ -1,0 +1,48 @@
+\ProvidesPackage{Preamble}
+\usepackage{mathtools}
+\usepackage{unicode-math}
+\usepackage{tabularx} % extra features for tabular environment
+\usepackage{amsmath}  % improve math presentation
+\usepackage{graphicx} % takes care of graphic including machinery
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{pdfpages}
+\usepackage{mathastext} % make textrm standard for math eq.
+\usepackage[version=4]{mhchem}
+\usepackage[margin=2.5cm]{geometry} % decreases margin
+\usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
+\usepackage{subfiles}
+\usepackage{etoolbox}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\pagestyle{fancy}
+\usepackage{microtype}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{bigstrut}
+\usepackage{float}
+\usepackage{chemfig}
+\usepackage{chemmacros}
+\usepackage{tocloft}
+%\chemsetup[chemformula]{format=\sffamily}
+\renewcommand*\printatom[1]{\ensuremath{\mathsf{#1}}}
+% \setatomsep{2em}
+% \setdoublesep{.6ex}
+% \setbondstyle{semithick}
+\hypersetup{
+	colorlinks=true,       % false: boxed links; true: colored links
+	linkcolor=blue,        % color of internal links
+	citecolor=blue,        % color of links to bibliography
+	filecolor=magenta,     % color of file links
+	urlcolor=blue
+}
+
+\titleformat{\chapter}
+{\normalfont\huge\bfseries}{\thechapter}{1em}{}
+%
+%  \titlespacing*{\chapter}{0pt}{0pt}{20pt}
+
+\setlength{\cftbeforetoctitleskip}{-2em}
+\lhead{}
