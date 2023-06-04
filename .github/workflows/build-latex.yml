@@ -11,8 +11,6 @@ jobs:
         with:
           root_file: Master.tex
           latexmk_use_lualatex: true
-      - name: Move PDF to repository
-        run: mv Master.pdf $GITHUB_WORKSPACE
       - name: Configure Git
         run: |
           git config --global user.name "GitHub Actions"
