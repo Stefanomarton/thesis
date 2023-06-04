@@ -11,8 +11,15 @@ jobs:
         with:
           root_file: Master.tex
           latexmk_use_lualatex: true
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v3
-        with:
-          name: PDF
-          path: Master.pdf
+      - name: Move PDF to repository
+        run: mv Master.pdf $GITHUB_WORKSPACE
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+      - name: Commit and push changes
+        run: |
+          git checkout master
+          git add Master.pdf
+          git commit -m "Update PDF file"
+          git push
