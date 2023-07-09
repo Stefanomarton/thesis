@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Master.aux
+The style file: unsrt.bst
+Database file #1: Bibliography.bib
+Warning--there's a number but no volume in pluczyk_using_2018
+You've used 5 entries,
+            1791 wiz_defined-function locations,
+            482 strings with 4533 characters,
+and the built_in function-call counts, 1297 in all, are:
+= -- 117
+> -- 54
+< -- 0
++ -- 20
+- -- 15
+* -- 122
+:= -- 210
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 5
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 45
+empty$ -- 123
+format.name$ -- 15
+if$ -- 271
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 5
+newline$ -- 28
+num.names$ -- 5
+pop$ -- 6
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 14
+stack$ -- 0
+substring$ -- 127
+swap$ -- 5
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 14
+width$ -- 6
+write$ -- 57
+(There was 1 warning)
