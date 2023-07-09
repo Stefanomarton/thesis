@@ -2,14 +2,49 @@
 \begin{document}
 \chapter{Tool Development}\label{chap:tooldev}
 
-\section{Ultra specific software, why?}\label{sec:specific-software}
+\section{Ultra specific command-line based software, why?}\label{sec:specific-software}
+In recent times, there has been a decline in the affinity towards command-line interfaces, which is a regrettable development. While graphical user interfaces (GUIs) have gained popularity due to their intuitive nature and visual appeal, the diminishing use of command-line tools is unfortunate. Despite their perceived complexity, command-line interfaces offer unparalleled efficiency, flexibility, and control, making them indispensable for certain tasks and user groups. It is important to recognize the value of command-line tools and the unique advantages they bring to the table, fostering a balanced approach that embraces both GUIs and command-line interfaces.\\
+Today, there is still a need for ultra-specific command-line-based tools despite the availability of graphical user interfaces (GUIs) for several reasons:
 
+\begin{enumerate}
+	\item Efficiency: Command-line tools often offer a more efficient and streamlined way of performing tasks compared to GUIs. With command-line interfaces, users can execute complex operations using concise commands and leverage scripting capabilities to automate repetitive tasks. This efficiency is particularly valuable in scenarios involving large-scale data processing, system administration, or software development.
+	\item Flexibility and Customizability: Command-line tools provide users with a high degree of flexibility and customizability. They offer a wide range of options, flags, and parameters that can be combined to achieve specific outcomes. Users can tailor commands to their specific needs, combining different tools and building complex workflows. This level of control and adaptability is often preferred by power users and professionals who require fine-grained control over their tools.
+	\item Remote Access and Automation: Command-line tools are ideal for remote access and automation scenarios. Through remote shell access, users can manage and control systems from anywhere, which is particularly useful for server administration, cloud computing, or managing distributed environments. Additionally, command-line tools can be easily integrated into scripts and workflows, allowing for automated execution of tasks and easy integration with other tools or systems.
+	\item Resource Efficiency: GUIs typically consume more system resources compared to command-line tools. This is because GUIs require graphical rendering, user interface components, and other overhead, whereas command-line tools operate in a text-based environment, requiring fewer system resources. In resource-constrained environments or when dealing with large-scale operations, command-line tools can be more efficient and less demanding on the system.
+	\item  Reproducibility and Version Control: Command-line tools facilitate reproducibility and version control in software development and data analysis workflows. By documenting the specific commands and parameters used, it becomes easier to reproduce results or share workflows with others. Additionally, version control systems like Git are well-suited for tracking changes to text-based code and configuration files, making it easier to collaborate and manage projects effectively.
+\end{enumerate}
 \subsection{Open Source Software}\label{sec:open-source-software}
+Open source software plays a significant role in the fields of university education and chemistry. In academia, the use of open source software promotes collaboration, knowledge sharing, and innovation. Universities often encourage the adoption of open source tools as they provide students and researchers with accessible and cost-effective alternatives to proprietary software.
+
+In the domain of chemistry, open source software offers a wide range of benefits. It empowers researchers to analyze, model, and simulate chemical systems, enhancing their understanding and enabling them to make informed decisions. Open source software encourages transparency and reproducibility in scientific experiments, as the source code is freely available for scrutiny and modification.
+
+Furthermore, open source software encourages the development of a vibrant community around a particular tool. Chemists and researchers can contribute to the improvement of open source software by suggesting new features, reporting bugs, or even collaborating on code development. This collaborative environment fosters a sense of collective knowledge creation and sharing, benefiting the entire chemistry community.
+
+Moreover, open source software aligns with the principles of academic freedom and intellectual property sharing. It enables researchers to customize software according to their specific needs, adapt it to evolving research requirements, and redistribute their modifications to the community. This ethos promotes the rapid advancement of scientific knowledge and encourages interdisciplinary collaborations.
+
+Overall, open source software in the context of university and chemistry serves as a catalyst for innovation, education, and scientific progress. Its accessibility, flexibility, and collaborative nature make it an invaluable resource for students, researchers, and professionals, helping to accelerate breakthroughs and advancements in the field of chemistry.
 
 \subsubsection{Python and Matplotlib}\label{sec:py-plt}
+Python and the matplotlib library have played pivotal roles in the fields of university education and chemistry due to their versatility, ease of use, and extensive visualization capabilities.
+
+Python, being a powerful and accessible programming language, has gained immense popularity among students and researchers. Its intuitive syntax and extensive libraries make it an ideal choice for scientific computing and data analysis tasks. In the context of university education, Python serves as an effective tool for teaching programming fundamentals, data manipulation, and numerical computing.
+
+In chemistry, Python offers a wide range of libraries and frameworks specifically designed for scientific analysis and modeling. These libraries, such as NumPy, SciPy, and Pandas, provide efficient numerical computations, statistical analysis, and data manipulation capabilities. Python's extensive ecosystem also includes specialized chemistry libraries like RDKit, PyMOL, and ASE, which enable chemists to perform tasks such as molecular visualization, molecular dynamics simulations, and quantum chemistry calculations.
+
+One of the key strengths of Python in chemistry lies in its seamless integration with the matplotlib library. Matplotlib is a popular plotting library that allows the creation of high-quality, publication-ready visualizations. It provides a wide range of plot types, customization options, and interactive features, making it a valuable tool for visualizing chemical data, molecular structures, spectra, reaction pathways, and more. Matplotlib's integration with Python's scientific libraries enables researchers and educators to create informative and visually appealing graphs, aiding in data analysis, hypothesis testing, and presentation of research findings.
+
+Python and matplotlib also contribute to the reproducibility of scientific research. Researchers can document their analysis workflows, including data processing, modeling, and visualization steps, using Python scripts. These scripts can be shared, reused, and easily reproduced, facilitating collaboration and enhancing the transparency of scientific investigations.
 
 \section{Plotty}\label{sec:plotty}
 
+In light of the aforementioned reasons, I have made the decision to give a small contribution to this domain by developing a small command-line utility aimed at rapidly generating graphs from IR and UV spectroscopy data, offering predefined styles and commonly used processing options.
+
+The purpose of this utility is to provide researchers and analysts with a streamlined and efficient tool for graph generation. By leveraging the command-line interface, users can swiftly generate plots by executing concise commands, thereby enhancing productivity and reducing manual efforts. \\
+The utility will offer a range of predefined styles, enabling users to choose from various visual representations that align with common conventions in spectroscopy. These styles will encompass color schemes, line types, markers, and other visual attributes that facilitate the clear and accurate representation of spectral data.
+
+This tool will strive to uphold the principles of open-source software, facilitating collaboration, reproducibility, and customization. It is my aspiration that this utility will assist researchers, educators, and practitioners in their endeavors, streamlining the visualization and analysis of spectroscopic data and fostering further discoveries in this domain.
+
+\subsection{Major Functionalities}
 
 
 \end{document}
