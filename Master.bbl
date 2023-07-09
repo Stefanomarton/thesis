@@ -1,11 +1,5 @@
 \begin{thebibliography}{1}
 
-\bibitem{aromi_poly_2008}
-Guillem Aromí, Patrick Gamez, and Jan Reedijk.
-\newblock Poly beta-diketones: {Prime} ligands to generate supramolecular
-  metalloclusters.
-\newblock {\em Coordination Chemistry Reviews}, 252(8-9):964--989, April 2008.
-
 \bibitem{desiraju_chemistry_2001}
 Gautam~R. Desiraju.
 \newblock Chemistry beyond the molecule.
@@ -17,5 +11,23 @@ O.~M. Yaghi and Hailian Li.
   {Containing} {Large} {Rectangular} {Channels}.
 \newblock {\em Journal of the American Chemical Society}, 117(41):10401--10402,
   October 1995.
+
+\bibitem{aromi_poly_2008}
+Guillem Aromí, Patrick Gamez, and Jan Reedijk.
+\newblock Poly beta-diketones: {Prime} ligands to generate supramolecular
+  metalloclusters.
+\newblock {\em Coordination Chemistry Reviews}, 252(8-9):964--989, April 2008.
+
+\bibitem{elgrishi_practical_2018}
+Noémie Elgrishi, Kelley~J. Rountree, Brian~D. McCarthy, Eric~S. Rountree,
+  Thomas~T. Eisenhart, and Jillian~L. Dempsey.
+\newblock A {Practical} {Beginner}’s {Guide} to {Cyclic} {Voltammetry}.
+\newblock {\em Journal of Chemical Education}, 95(2):197--206, February 2018.
+
+\bibitem{pluczyk_using_2018}
+Sandra Pluczyk, Marharyta Vasylieva, and Przemyslaw Data.
+\newblock Using {Cyclic} {Voltammetry}, {UV}-{Vis}-{NIR}, and {EPR}
+  {Spectroelectrochemistry} to {Analyze} {Organic} {Compounds}.
+\newblock {\em Journal of Visualized Experiments}, (140):56656, October 2018.
 
 \end{thebibliography}
