@@ -1,4 +1,5 @@
 \documentclass[../Master.tex]{subfiles}
+\bibliography{Bibliography}
 \begin{document}
 \chapter{Result and discussion}
 
@@ -18,7 +19,7 @@ The synthesis of the ligand is based on the cross-Claisen condensation followed 
 The same synthetic approach has been carried out over a wide range of analogue compound, resulting tipically in high yield scalable reaction, as an example the ligand that will be analyzed in the section\ \ref{sec:electrochemistry} has been approached with the same strategies.\\
 The detailed information on the synthesis and charactherization of 4,4’-malonyldibenzoic are reported in the section\ \ref{cha:experimental-section}.
 \newpage
-\subsection{Pyrazole Diester Formation}\label{sec:pyrazole-reaction}
+\subsection{Pyrazole Ligand Retrosynthesis}\label{sec:pyrazole-reaction}
 Starting from the 1,3-diketone diester intermediate, obtained from the cross Claisen condensation, the apparently easier way to procede with the pyrazole formation is using hydrazine, of which a brief reaction mechanism is reported.
 
 \begin{figure}[h!]
@@ -36,6 +37,17 @@ Typically the reaction reaches completion in ethanol under reflux conditions wit
 
 After hydrazine addition the diester intermediate must undergo hydrolisis to obtain the corrisponding dibenzoic acid. The conditions for this step have also been analyzed.
 
+\subsection{Pyrazole Diester Formation}\label{sec:pyrazole-diester}
+
+During the iterative process of analysing the reaction condition, certain key characteristics of the starting reagent and the product of interest were crucial. The diketone intermediate possesses a characteristic straw-yellow colour, and also exhibits photoluminescence in the yellow-green range easily observed with a UV lamp. The pyrazole product is whitish in colour and returns intense blue emission.\\
+Numerous variables influencing the course of the reaction were evaluated, the results of which are given below. The use of IR spectroscopy and NMR structural analysis was instrumental in recognising the products formed and also the mixtures left over from failed reactions, especially in the first attempts.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=13cm,height=8cm,keepaspectratio]{Structures/pyrazole-form.eps}
+	\caption{Pyrazole Formation}\label{fig:pyrazole-form}
+\end{figure}
+
 \subsubsection{Solvent Choice and Reagent Solubility}\label{sec:solvent}
 
 Dimethyl 4,4’-malonyldibenzoate is poorly soluble in most organic solvents, even after careful grinding and sonication. Different alternatives has been evaluated, noting that the solvent choice was highly restricted from the fact that 65\% hydrazine in water has been initially used. \\
@@ -52,6 +64,29 @@ In light on the obtained information, it is worth to make a few assessments and 
 The solubility of the reactant is clearly a key point in the formation of the product of interest, which is why DMSO or DMF should be used, noting also that the reaction seems to benefit from higher temperatures. However, using high-boiling solvents complicates the process of isolation and purification of the product in a way that is difficult to manage, making the synthesis process poorly reproducible.\\
 Some example of similar problem has been found in literature\ \cite{fustero_improved_2008}, where using fluorinated derivatives of EtOH and iPrOH allowed to greatly improve the yield and in the specific case the regioselective of the hydrazine addition reaction on 1,3 non-symmetrical diketones. Owing to their unique properties (high hydrogen bonding donor ability, low nucleophilicity, high ionizing power and ability to solvate water), fluorinated alcohols, hexafluoroisopropanol (HFIP) and trifluoroethanol (TFE), has been shown to modify the course of reactions when they are used as solvents, allowing reactions, which usually require the use of added reagents or metal catalysts to be carried out under neutral and mild conditions.
 
+\subsubsection{Reagents proportions}\label{sec:reag-prop}
+
+Various values of the molar ratio between 1,3-diketone and hydrazine were tested after analysing the information available in the literature. The reaction was carried out in the presence of 2.5, 5 and 10 equivalents of hydrazine in relation to dimethyl 4,4’-malonyldibenzoate, using EtOH as solvent.
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}[b]{cc}
+		\toprule
+		Molar Ration / \(n \ (N_{2}H_{4} \cdot H_{2}O) \ n(4,4’-malonyldibenzoate) ^{-1}\) & Yield &
+		\midrule
+		2.5                                                                                & -     &
+		5                                                                                  & 25 \% &
+		10                                                                                 & 6 \%  &
+		\bottomrule
+	\end{tabular}
+	\caption{Hydrazine Molar Ration}\label{tab:hydrazine-ratio}
+\end{table}
+
+\subsubsection{Reaction Time}\label{sec:reac-time}
+
+As the starting intermediate is poorly soluble in most of the solvents used, the reaction inevitably takes place in heterophase, which could lead to longer reaction times than expected. For this reason, different reaction times were evaluated by following the course of the reaction in TLC and assessing the composition of the product obtained.\\
+With a reaction time of about 3 h, no product formation was observed: it is necessary to let the mixture react overnight, however, no significant improvement in yield is observed for reaction times longer than 24 h. Given that the reaction proceeds by a series of equilibrium steps, the experimental result is consistent with the reaction mechanism.
+
 \subsubsection{Reagent Choice}
 
 By further analyzing the reaction mechanism of the addition of hydrazine to 1,3-diketone, it became clearer that the water loss steps could be the reason for the problems associated with the low yield of the reaction. The use of hydrazine in aqueous solution would theoretically be detrimental in order to shift the equilibrium toward product formation, so the use of pure monohydrate hydrazine was verified.
@@ -62,7 +97,7 @@ Supporting the experimentally obtained conclusion is the fact that several other
 
 To increase the yield of the reaction, the use of catalysts and other chemicals has been considered. \\
 Small quantities of TEA and \(Et_{4}NOH\) has been tested in order to enhance the solubility of reagent in the used solvent, however the bases effect are detrimental on the reaction mechanism. No product formation has been observed using \(Et_{4}NOH\) and no noticeable difference in solubility has been observed.
-Use of sulfuric acid -> mechanism, dehydratation
+Use of sulfuric acid -> mechanism,dehydratation
 
 \subsubsection{Purification Methodes}\label{sec:pyr-purification}
 
@@ -76,7 +111,7 @@ The ideal purification method should be selective, efficient, scalable with mino
 	\item Recrystallization from EtOH
 
 	      Taking special care to hot filter on Teflon filter any residual unreacted reagents reactants and conducting controlled cooling, a product of good purity is obtained in a reasonable time and using a minimum amount of solvent. \\
-	      Recrystallization from EtOH results frequently in the literature (https://doi.org/10.1515/HC.2004.10.2-3.249) as a purification method for pyrazole compounds.
+	      Recrystallization from EtOH results frequently in the literature\ \cite{joshi_synthesis_2004} as a purification method for pyrazole compounds.
 	\item Soxhlet with EtOH
 
 	      The technique appears to be of good efficiency in terms of purity but the amount of solvent and time required are excessive. The long time in contact with EtOH partially causes the dissolution of some of the impurities. It might be appropriate on large amounts of product where
@@ -87,13 +122,19 @@ Recrystallization in EtOH was found to be the easiest to perform and was the one
 
 \subsection{Pyrazole Ester Hydrolisis}\label{sec:pyrazole-hydro}
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=13cm,height=8cm,keepaspectratio]{Structures/pyrazole-hydro.eps}
+	\caption{Pyrazole Diester Hydrolisis}\label{fig:pyrazole-form}
+\end{figure}
+
 The removal of methyl esters is a standard practice in organic chemistry, and no specific issues were encountered during this step of the synthesis: two sythetic pathway as been analyzed.\\
 Removal using LiOH in THF:H$_2$O 1:1 has been initially utilized, but the yield from different reaction was not highly reproducible, maybe for the precence of different impurity deriving from different pyrazole synthesis method.\\
 Instead, removal with NaOH in MeOH:H$_{2}$O 1:1 gives better results, with higher yield and cleaner work up.
 
 \subsection{Alternative Pyrzole Synthesis}\label{sec:alt-pyrazole-synthe}
 
-Considering the problem encountered in exploring the synthesis of this ligand, another synthetic route could be followed, using a croton condensation and then a conjugate addition to the newly formed \(\alpha-\beta\) unsaturated compound \cite{cinar_synthesis_2021}.
+Considering the problem encountered in exploring the synthesis of this ligand, another synthetic route could be followed, using a croton condensation and then a conjugate addition to the newly formed \(\alpha-\beta\) unsaturated compound\ \cite{cinar_synthesis_2021}.
 
 \begin{figure}[h!]
 	\centering
@@ -103,8 +144,7 @@ Considering the problem encountered in exploring the synthesis of this ligand, a
 
 The \(\alpha-\beta\) unsaturated diester intermediate, is asymmetric and carry an olefinic group that should ensure good solubility in less polar organic solvents, allowing to bypass the key problem of solubility encountered with dimethyl 4,4’-malonyldibenzoate.
 
-
-\section{Electrochemistry}\label{sec:electrochemistry}
+\newpage\section{Electrochemistry}\label{sec:electrochemistry}
 
 \subsection{Why electrochemistry and cyclic voltammetry?}\label{sec:elect-intro}
 
@@ -113,8 +153,12 @@ The aforementioned parameters correlate with the energy levels of highest occupi
 
 When cyclic voltammetry (CV) is combined with or ultraviolet-visible and near-infrared (UV-Vis-NIR) spectroscopies, it provides useful information such as electron affinity, ionization potential, band-gap energies, the type of charge carriers, and degradation information\ \cite{pluczyk_using_2018}. Analizing the CV experiment data is possible to determine the band-gap value that can be later evaluted against the one obtained from the spectroscopic UV data.
 
-\subsubsection{Ligands Background}
-Electrochemistry exploration has been carried out on already studied compounds\ \cite{carlucci_heterometallic_2010}, that have been already synthetized and studied.
+\subsubsection{Ligands and  Background}
+Electrochemistry exploration has been carried out on already studied compounds\ \cite{carlucci_heterometallic_2010}, that have been already synthetized and studied. Structure and synthesis Of ligand and monomers  are given below, details of reaction conditions are given in section\ \ref{cha:experimental-section}.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=16cm,height=8cm,keepaspectratio]{Structures/dicn-sint.eps}\caption{ 4‐[3‐(4‐cyanophenyl)‐3‐oxopropanoyl]benzonitrile}\label{fig:pyrazole-retro-alt}
+\end{figure}
 
 \end{document}
 
