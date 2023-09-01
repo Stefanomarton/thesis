@@ -44,6 +44,7 @@
 \newcommand{\@footlineauthor}{\insertauthor \enspace$\vert$\enspace}
 \newcommand{\@footlinepayoff}{\@footlineauthor\inserttitle}
 \newcommand{\footlinepayoff}[1]{\renewcommand{\@footlinepayoff}{#1}}
+
 % Define footline content
 \setbeamertemplate{footline}{%
 	\begin{beamercolorbox}[wd=\textwidth,ht=5mm,dp=3mm,rightskip=1cm,leftskip=1cm]{footline}
@@ -162,7 +163,8 @@
 
 		{\usebeamerfont{author}\usebeamercolor[fg]{author}\textbf{\insertauthor} \ifdefempty{\@IDnumber}{}{(\@IDnumber)}}
 
-		{\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate}
+		% TODO: Cambiare data
+		{\usebeamerfont{date}\usebeamercolor[fg]{date}25 Settembre 2023}
 	\end{beamercolorbox}
 }
 
@@ -279,7 +281,7 @@
 				% \Huge \inserttitle
 				\vspace{5mm}
 			}
-			\Large \textsl{Thank you for listening! \\ Any questions?}
+			\Large \textsl{Grazie dell'attenzione \\ Domande?}
 		\end{minipage}
 	\end{frame}
 	\endgroup
@@ -290,14 +292,16 @@
 {
 	\begingroup
 	\themecolor{main}
-	\begin{frame}{Table of Contents}
+	\begin{frame}{Indice}
 		\tableofcontents[currentsection]
 	\end{frame}
 	\endgroup
 }
 
 % style of section presented in the table of contents
-\setbeamertemplate{section in toc}{$\blacktriangleright$~\inserttocsection}
+\setbeamertemplate{section in toc}{\rule[0.3ex]{3pt}{3pt}~~\inserttocsection}
+\setbeamertemplate{subsection in toc}{%
+	\hspace{1.2em}{\color{white}\rule[0.3ex]{3pt}{3pt}}~~\inserttocsubsection\par}
 
 % automate subtitle of each frame
 \makeatletter
@@ -306,3 +310,4 @@
 
 % avoid numbering of frames that are breaked into multiply slides
 \setbeamertemplate{frametitle continuation}{}
+
