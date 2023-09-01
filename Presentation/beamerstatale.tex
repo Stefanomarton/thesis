@@ -14,25 +14,215 @@
 
 \newcommand{\hrefcol}[2]{\textcolor{cyan}{\href{#1}{#2}}}
 
-\title{Use of a ligand containing a pyrazole functionality and two carboxylate groups to construct new MOFs for applications in gas storage}
-\subtitle{Using \LaTeX\ to prepare slides}
-\course{Master's Degree in Computer Science}
-\author{\href{mailto:ciao@gio.im}{Stefano Marton}}
+\title{\large{Utilizzo di un legante contenente una funzionalità pirazolica e due gruppi carbossilici per la costruzione di nuovi MOFs per applicazioni nell’ambito del gas storage}}
+\course{Relatrice: Prof. Lucia Carlucci}
+\subtitle{Laurea Triennale in Chimica}
+\author{\href{stefano.marton@studenti.unimi.it}{Stefano Marton}}
 \IDnumber{962848}
 
 \begin{document}
 \maketitle
 
-\begin{frame}
+\section{Sintesi del legante pirazolico}
 
-	This template is a based on \hrefcol{https://www.overleaf.com/latex/templates/sintef-presentation/jhbhdffczpnx}{SINTEF Presentation} from \hrefcol{mailto:federico.zenith@sintef.no}{Federico Zenith} and its derivation \hrefcol{https://github.com/TOB-KNPOB/Beamer-LaTeX-Themes}{Beamer-LaTeX-Themes} from Liu Qilong
+\setlength{\columnsep}{0.2cm}
+\begin{frame}{Perché leganti con funzionitá pirazoliche?}
+	\begin{columns}
+		\hspace{1cm}
+		\begin{column}{0.3\textwidth}
+			\begin{itemize}
+				\item Affinitá con Al
+				\item Legami idrogeno
+				\item Rigiditá strutturale
+			\end{itemize}
+		\end{column}
+		\hspace{-1cm}
+		\begin{column}{0.7\textwidth}
+			\begin{figure}[h]
+				\includegraphics[width=8cm,keepaspectratio]{illustration/drawing.png}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
 
-	\vspace{\baselineskip}
+\subsection{Addizione diretta di idrazina al dichetone}
+\begin{frame}{Addizione diretta di idrazina al dichetone}
+	\framesubtitle{Retrosintesi}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=14cm,height=8cm,keepaspectratio]{../Structures/pyr-retro.eps}
+		\caption{Approccio retrosintetico sfruttando l'addizione diretta di idrazina}
+	\end{figure}
+\end{frame}
 
-	In the following you find a brief introduction on how to use \LaTeX\ and the beamer package to prepare slides, based on the one written by \hrefcol{mailto:federico.zenith@sintef.no}{Federico Zenith} for \hrefcol{https://www.overleaf.com/latex/templates/sintef-presentation/jhbhdffczpnx}{SINTEF Presentation}
+\begin{frame}{Addizione diretta di idrazina al dichetone}
+	\framesubtitle{Passaggio Chiave}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=10cm,height=8cm,keepaspectratio]{../Structures/pyrazole-form.eps}
+		\caption{Reazione chiave di formazione dell'anello pirazolico}
+	\end{figure}
+\end{frame}
 
-	% This template is released under \hrefcol{https://creativecommons.org/licenses/by-nc/4.0/legalcode}{Creative Commons CC BY 4.0} license
+% TODO: aggiungere rese dei passaggi precedenti.
 
+\begin{frame}{Addizione diretta di idrazina al dichetone}
+	\framesubtitle{Condizioni di Reazione e Recupero del Prodotto}
+	\begin{columns}
+		\hspace{1cm}
+		\begin{column}{0.5\textwidth}
+			Condizioni di reazione
+			\begin{itemize}
+				\item Solvente e solubilitá
+				\item Temperatura
+				\item Tempo di reazione
+			\end{itemize}
+			\vspace{0.2cm}
+			Recupero del prodotto
+			\begin{itemize}
+				\item Ricristallizzazione
+				\item Colonna Cromatografica
+				\item Soxhlet
+			\end{itemize}
+		\end{column}
+		\hspace{-3cm}
+		\begin{column}{0.5\textwidth}
+			\vspace{-0.5cm}
+			\begin{figure}[h!]
+				\centering
+				\includegraphics[width=5cm,height=5cm,keepaspectratio]{../Structures/dikest2.eps}
+				\caption{Struttura dell'intermedio di partenza}
+			\end{figure}
+			\begin{footnotesize}
+				\begin{center}
+					\begin{tabular}{ccc}
+						\toprule
+						{Solvente} & T [K] & Resa [\%] \\
+						\midrule
+						DMSO       &       & \(25\)    \\
+						EtOH       &       & \(< 5\)   \\
+						\bottomrule
+					\end{tabular}
+				\end{center}
+			\end{footnotesize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\subsection{Addizione coniugata di idrazina all'alfabeta insaturo}
+
+\begin{frame}{Addizione coniugata di idrazina all'alfabeta insaturo}
+	\framesubtitle{Retrosintesi}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=13cm,height=8cm,keepaspectratio]{../Structures/pyrazole-retro-alt.eps}
+		\caption{Approccio retrosintetico sfruttando l'addizione coniugata di idrazina}
+	\end{figure}
+\end{frame}
+
+% TODO: aggiungere rese dei passaggi precedenti.
+\begin{frame}{Addizione coniugata di idrazina all'alfabeta insaturo}
+	\framesubtitle{Passaggio Chiave}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=10cm,height=8cm,keepaspectratio]{../Structures/pyrazole-form-alt.eps}
+		\caption{Reazione chiave di formazione dell'anello pirazolico}
+	\end{figure}
+\end{frame}
+
+% TODO: cambiare formula del legante ed aggiungere microonde
+\begin{frame}{Addizione diretta di idrazina al dichetone}
+	\framesubtitle{Condizioni di Reazione e Recupero del Prodotto}
+	\begin{columns}
+		\hspace{1cm}
+		\begin{column}{0.5\textwidth}
+			Condizioni di reazione
+			\begin{itemize}
+				\item Solvente e solubilitá
+				\item Temperatura
+				\item Tempo di reazione
+				\item Microonde
+			\end{itemize}
+			\vspace{0.2cm}
+			Recupero del prodotto
+			\begin{itemize}
+				\item pro
+				\item apro
+				\item
+			\end{itemize}
+		\end{column}
+		\hspace{-3cm}
+		\begin{column}{0.5\textwidth}
+			\vspace{-0.5cm}
+			\begin{figure}[h!]
+				\centering
+				\includegraphics[width=5cm,height=5cm,keepaspectratio]{../Structures/unsaturated.eps}
+				\caption{Struttura dell'intermedio di partenza}
+			\end{figure}
+			\begin{footnotesize}
+				\begin{center}
+					\begin{tabular}{ccc}
+						\toprule
+						{Solvente} & T [K] & Resa [\%] \\
+						\midrule
+						DMSO       &       & \(25\)    \\
+						EtOH       &       & \(< 5\)   \\
+						\bottomrule
+					\end{tabular}
+				\end{center}
+			\end{footnotesize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\section{Caratterizzazione elettrochimica di leganti dichetonici}
+
+\begin{frame}{Perché elettrochimica?}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item Valutazione della reattivitá chimica
+				\item Determinazione delle proprietá elettroniche
+				\item Relazione con le transizioni elettroniche osservate in spettroscopia
+			\end{itemize}
+		\end{column}
+		\hspace{-1cm}
+		\begin{column}{0.5\textwidth}
+			\begin{center}
+				\begin{itemize}
+					\begin{figure}[h!]
+						\hspace{-1cm}
+						\includegraphics[width=6cm,keepaspectratio]{../Structures/electrochemistry-generic.eps}
+						\caption{Generic Diketone Ligand Structure}
+					\end{figure}
+				\end{itemize}
+			\end{center}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Caratterizzazione UV}
+	\vspace{-0.5cm}
+	\begin{columns}
+		\hspace{-1cm}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}[h!]
+				\centering
+				\includegraphics[width=8cm,keepaspectratio]{../Spectra/LegantiMeCN.eps}
+				\vspace*{-8mm}
+				\hspace*{3cm}
+				\caption{UV in MeCN}
+			\end{figure}
+		\end{column}
+		\hspace{-0.5cm}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}[h!]
+				\includegraphics[width=8cm,keepaspectratio]{../Spectra/LegantiDCM.eps}
+				\vspace*{-8mm}
+				\caption{UV in MeCN}
+			\end{figure}
+		\end{column}
+	\end{columns}
 \end{frame}
 
 \backmatter
