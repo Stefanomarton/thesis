@@ -1,8 +1,12 @@
 \documentclass{beamer}
-\usepackage{amsfonts,amsmath,oldgerm}
+\usepackage{amsfonts,amsmath,oldgerm,graphicx,epstopdf}
+\usepackage{booktabs}
+\epstopdfsetup{outdir=./}
+\setbeamertemplate{caption}{\color{maincolor}Fig. \color{darkgray} \raggedright\insertcaption\par}
+
 \usetheme{sintef}
 
-\newcommand{\testcolor}[1]{\colorbox{#1}{\textcolor{#1}{test}}~\texttt{#1}}
+% \newcommand{\testcolor}[1]{\colorbox{#1}{\textcolor{#1}{test}}~\texttt{#1}}
 
 \usefonttheme[onlymath]{serif}
 
