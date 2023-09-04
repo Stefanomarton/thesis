@@ -1,7 +1,7 @@
 \documentclass{beamer}
 \usepackage{amsfonts,amsmath,oldgerm,graphicx,epstopdf}
 \usepackage{booktabs}
-\epstopdfsetup{outdir=./}
+\epstopdfsetup{outdir=illustration}
 \setbeamertemplate{caption}{\color{maincolor}Fig. \color{darkgray} \raggedright\insertcaption\par}
 
 \usetheme{sintef}
@@ -39,7 +39,7 @@
 		\hspace{-1cm}
 		\begin{column}{0.7\textwidth}
 			\begin{figure}[h]
-				\includegraphics[width=8cm,keepaspectratio]{illustration/drawing.png}
+				\includegraphics[width=8cm,keepaspectratio]{illustration/drawing2.pdf}
 			\end{figure}
 		\end{column}
 	\end{columns}
@@ -55,16 +55,28 @@
 	\end{figure}
 \end{frame}
 
+% TODO: aggiungere NMR e/o IR, almeno da avere qualche informazione sulla caratterizzazione
 \begin{frame}{Addizione diretta di idrazina al dichetone}
-	\framesubtitle{Passaggio Chiave}
+	\framesubtitle{Valutazione dell'efficacia dei passaggi sintetici}
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=10cm,height=8cm,keepaspectratio]{../Structures/pyrazole-form.eps}
 		\caption{Reazione chiave di formazione dell'anello pirazolico}
 	\end{figure}
+	\begin{footnotesize}
+		\begin{center}
+			\begin{tabular}{cc}
+				\toprule
+				{Reazione}                                    & Resa [\%]     \\
+				\midrule
+				Claisen mista per la formazione del dichetone & \(92\)        \\
+				Addizione di idrazina al dichetone            & \(< 25\)      \\
+				Idrolisi                                      & \(\simeq 70\) \\
+				\bottomrule
+			\end{tabular}
+		\end{center}
+	\end{footnotesize}
 \end{frame}
-
-% TODO: aggiungere rese dei passaggi precedenti.
 
 \begin{frame}{Addizione diretta di idrazina al dichetone}
 	\framesubtitle{Condizioni di Reazione e Recupero del Prodotto}
@@ -97,10 +109,12 @@
 				\begin{center}
 					\begin{tabular}{ccc}
 						\toprule
-						{Solvente} & T [K] & Resa [\%] \\
+						{Solvente} & T [K] & Resa [\%]     \\
 						\midrule
-						DMSO       &       & \(25\)    \\
-						EtOH       &       & \(< 5\)   \\
+						DMF        & 403   & \(< 10\)      \\
+						DMSO       & 433   & \(\simeq 25\) \\
+						EtOH       & 351   & \(< 5\)       \\
+						THF        & 339   & \(< 5\)       \\
 						\bottomrule
 					\end{tabular}
 				\end{center}
@@ -120,17 +134,29 @@
 	\end{figure}
 \end{frame}
 
-% TODO: aggiungere rese dei passaggi precedenti.
+% TODO: aggiungere NMR e/o IR, almeno da avere qualche informazione sulla caratterizzazione
 \begin{frame}{Addizione coniugata di idrazina all'alfabeta insaturo}
-	\framesubtitle{Passaggio Chiave}
+	\framesubtitle{Valutazione dell'efficacia dei passaggi sintetici}
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=10cm,height=8cm,keepaspectratio]{../Structures/pyrazole-form-alt.eps}
 		\caption{Reazione chiave di formazione dell'anello pirazolico}
 	\end{figure}
+	\begin{footnotesize}
+		\begin{center}
+			\begin{tabular}{cc}
+				\toprule
+				{Reazione}                                                                & Resa [\%]     \\
+				\midrule
+				Condensazione crotonica per la formazione dell'\(\alpha,\beta \)-insaturo & \(94\)        \\
+				Addizione di idrazina al \(\alpha,\beta \)-insaturo                       & \(< 25\)      \\
+				Idrolisi                                                                  & \(\simeq 70\) \\
+				\bottomrule
+			\end{tabular}
+		\end{center}
+	\end{footnotesize}
 \end{frame}
 
-% TODO: cambiare formula del legante ed aggiungere microonde
 \begin{frame}{Addizione diretta di idrazina al dichetone}
 	\framesubtitle{Condizioni di Reazione e Recupero del Prodotto}
 	\begin{columns}
@@ -139,16 +165,10 @@
 			Condizioni di reazione
 			\begin{itemize}
 				\item Solvente e solubilitá
+				\item Catalisi acida e basica
 				\item Temperatura
 				\item Tempo di reazione
 				\item Microonde
-			\end{itemize}
-			\vspace{0.2cm}
-			Recupero del prodotto
-			\begin{itemize}
-				\item pro
-				\item apro
-				\item
 			\end{itemize}
 		\end{column}
 		\hspace{-3cm}
@@ -163,10 +183,11 @@
 				\begin{center}
 					\begin{tabular}{ccc}
 						\toprule
-						{Solvente} & T [K] & Resa [\%] \\
+						{Solvente} & T [K]   & Resa [\%] \\
 						\midrule
-						DMSO       &       & \(25\)    \\
-						EtOH       &       & \(< 5\)   \\
+						AcOH       & \(391\) & \(< 5\)   \\
+						EtOH + HCl & \(351\) & \(< 5\)   \\
+						EtOH + Py  & \(351\) & \(< 5\)   \\
 						\bottomrule
 					\end{tabular}
 				\end{center}
@@ -175,25 +196,37 @@
 	\end{columns}
 \end{frame}
 
+% TODO: Aggiungere struttura del sottoprodotto idrazonico
+\begin{frame}{Addizione diretta di idrazina al dichetone}
+	\framesubtitle{Intermedio idrazonico}
+
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=10cm,keepaspectratio]{../Structures/idrazone.eps}
+		\caption{Risonanza dell'intermedio idrazonico}
+	\end{figure}
+
+
+\end{frame}
+
 \section{Caratterizzazione elettrochimica di leganti dichetonici}
 
 \begin{frame}{Perché elettrochimica?}
 	\begin{columns}
 		\begin{column}{0.5\textwidth}
 			\begin{itemize}
-				\item Valutazione della reattivitá chimica
+				\item Valutazione della reattivitá elettrochimica
 				\item Determinazione delle proprietá elettroniche
 				\item Relazione con le transizioni elettroniche osservate in spettroscopia
 			\end{itemize}
 		\end{column}
-		\hspace{-1cm}
 		\begin{column}{0.5\textwidth}
 			\begin{center}
 				\begin{itemize}
 					\begin{figure}[h!]
 						\hspace{-1cm}
 						\includegraphics[width=6cm,keepaspectratio]{../Structures/electrochemistry-generic.eps}
-						\caption{Generic Diketone Ligand Structure}
+						\caption{Struttura generica di un legante dichetonico}
 					\end{figure}
 				\end{itemize}
 			\end{center}
