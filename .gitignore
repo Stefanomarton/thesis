@@ -5,3 +5,6 @@
 *.out
 *.toc
 *.pdf
+*.vrb
+*.nav
+Presentation/beamerstatale.snm
