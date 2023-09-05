@@ -27,6 +27,7 @@ Starting from the 1,3-diketone diester intermediate, obtained from the cross Cla
 	\includegraphics[width=16cm,height=8cm,keepaspectratio]{Structures/pyrazole-retro.eps}
 	\caption{Pyrazole Ligand Retrosynthesis}\label{fig:pyrazole-retro}
 \end{figure}
+
 Typically the reaction reaches completion in ethanol under reflux conditions with an excess of hydrazine within a few hours withouth any catalyzer: in this specific case several problems has been encountered and analyzed.\\
 
 \begin{figure}[h!]
@@ -34,7 +35,7 @@ Typically the reaction reaches completion in ethanol under reflux conditions wit
 	\includegraphics[width=16cm,height=8cm,keepaspectratio]{Images/pyrazole-mechanism.png}
 	\caption{Pyrazole Formation Mechanism}
 \end{figure}
-
+\newline
 After hydrazine addition the diester intermediate must undergo hydrolisis to obtain the corrisponding dibenzoic acid. The conditions for this step have also been analyzed.
 
 \subsection{Pyrazole Diester Formation}\label{sec:pyrazole-diester}
@@ -139,7 +140,7 @@ In order to evaluate the alternative synthetic pathway, with the hope of resolvi
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=13cm,height=8cm,keepaspectratio]{Structures/unsaturated-synt.eps}
-	\caption{Pyrazole Diester Hydrolisis}\label{fig:pyrazole-form}
+	\caption{Unsaturated Compound Formation}
 \end{figure}
 
 The reagents required for the reaction are readily available, and the reaction conditions used follow those classically applied in croton condensation reactions. Some of the variables that can influence the reaction have been analyzed, based on the reagents properties.\\
@@ -150,30 +151,63 @@ As for the solvent MeOH, it seems the easiest choice to avoid transesterificatio
 Moreover, at the end of the reactions performed, the solvent takes on a yellowish colour that could be associated with the fraction of self-condensation product formed that would then be soluble in MeOH. The condensation product, on the other hand, precipitates quantitatively. This is very useful to avoid any purification steps; any alternative solvent should retain this characteristic.\\
 On the basis of the observations, all reactions were carried out in MeOH and the effect of the solvent has not been adequately investigated.
 
-\subsubsection{Reaction Temperature and Ketone Addition}
+\subsubsection{Reaction Temperature and Reagent Addition}
 
-The ketone could give rise to self-condensation leading to the formation of an unwanted product, reducing the yield and necessitating a purification step. However, the self-condensation reaction is kinetically disadvantageous compared to cross-condensation. For these reasons, a slow addition of the NaOH solution and ice bath were used, and their effect on the reaction was verified.
+The ketone could give rise to self-condensation leading to the formation of an unwanted product, reducing the yield and necessitating a purification step. However, the self-condensation reaction is kinetically disadvantageous compared to cross-condensation. For these reasons, a slow addition of the NaOH solution and an ice bath was used.\\
+It would also be possible to exploit a slow addition of ketone to a dispersion of NaOH and aldehyde, however this is impractical as the ketone is not soluble in the typical amounts of solvent used and there is a risk of losing some of the reagent in the addition step.\\
+Under conditions such as room temperature, 4h reaction time and 1:1 molar ratio of ketone to aldehyde, a yield of 81\% was achieved. This, although satisfactory, can be further optimised.
 
-The use of an ice bath in the first phase of the reaction has been verified. There appears to be no temperature-related effect on the reaction yield as verified by the yields obtained. Moreover, by having the reaction take place at lower temperatures, it takes longer, and since there is no advantage in these conditions, it is not worth it. This may not be true using larger quantities of reagents or higher concentrations, this aspect has not been investigated.
+\subsubsection{Reaction Time}
+
+With regard to the optimal reaction time, some tests were carried out. An increase in reaction time leads to a significant increase in yield without any downside. The results obtained are shown below:
 
 
 \begin{table}[h!]
 	\centering
 	\begin{tabular}[b]{cc}
 		\toprule
-		Ice Bath & Yield &
+		Time / h & Yield \\
 		\midrule
-		Yes      & 82 \% &
-		No       & 80 \% &
+		4        & 81 \% \\
+		15       & 89 \% \\
 		\bottomrule
 	\end{tabular}
-	\caption{Temperature Effect On Crotonic Condensation}
+	\caption{Reaction time comparison}\label{tab:hydrazine-ratio}
 \end{table}
 
-Another aspect of the ketone's ability to self-condense is its slow addition.
+A longer reaction time leads to a significantly higher yield. Since the reaction takes place at room temperature and there are no special requirements in terms of equipment, there is no reason not to exploit this factor to achieve a higher yield.
 
-\subsubsection{Reaction Time}
+\subsubsection{Reagent Proportion}
 
+In order to optimise the reaction yield, it was thought that increasing the ratio of aldehyde to ketone might have a positive effect, as it theoretically reduces the possibility of a self-condensation reaction, given the higher aldehyde ratio.
+This possibility was tested with a 1.2 molar ratio of aldehyde to ketone, on an overnight reaction time. The results are shown below.
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}[b]{cc}
+		\toprule
+		Aldehyde Molar Ration & Yield \\
+		\midrule
+		1                     & 89 \% \\
+		1.2                   & 94 \% \\
+		\bottomrule
+	\end{tabular}
+	\caption{Molar ratio comparison}\label{tab:hydrazine-ratio}
+\end{table}
+
+It is evident that the effect of the slightly higher ratio is positive, but the effects on the reaction yield of even higher molar ratios have not been investigated: it might be interesting to evaluate this in the future.
+
+\subsection{Hydrazine addition to unsaturated precursor}\label{sec:hyd-add-ins}
+
+% TODO: aggiungere reazione di formazione del pirazolo a partire dall'alfa beta insaturo.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=13cm,keepaspectratio]{Structures/pyrazole-form-alternative.eps}
+	\caption{Hydrazine reaction with unsaturated compound}
+\end{figure}
+
+
+This step is the crucial one for evaluating the effectiveness of the alternative synthesis, given the difficulties encountered in forming the desired product from diketone. The conditions and results obtained for the formation of the pyrazole ring are evaluated, these include different solvents, catalysts, reaction time and use of microwave reactor.
 
 \subsection{Pyrazole Ester Hydrolisis}\label{sec:pyrazole-hydro}
 
