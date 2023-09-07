@@ -46,6 +46,55 @@ This tool will strive to uphold the principles of open-source software, facilita
 
 \subsection{Major Functionalities}
 
+% TODO: aggiungere funzionalitá implementate con qualche esempio e codice completo. Aggiungere funzionalitá help ed esempio di utilizzo per ognuno.
+
+The Python program is organized into several components, including a command-line interface, a \texttt{CSVPlotter} class, and specific plot styles. Here is an overview of its functionality:
+
+\subsubsection{Command-Line Interface}
+
+The program utilizes the \texttt{click} library to create a command-line interface, allowing users to execute it from the command line with various options and arguments.
+
+\subsubsection{CSVPlotter Class}
+
+The core of the program is the \texttt{CSVPlotter} class, responsible for handling the following tasks:
+
+\begin{itemize}
+	\item Initializing with parameters such as CSV file paths, output format, plot style, and the option to create combined plots.
+	\item Reading CSV files and extracting data (x and y values) for plotting.
+	\item Generating plots based on the specified plot style, supporting styles like IR, HNMR, CNMR, and UV spectroscopy.
+	\item Saving the generated plots as image files in the chosen output format.
+\end{itemize}
+
+\subsubsection{Supported Plot Styles}
+
+The program supports multiple plot styles, each with its specific configurations:
+
+\begin{itemize}
+	\item \textbf{IR (Infrared Spectroscopy) Style}: Plots labeled with "Wave Number / $cm^{-1}$" on the x-axis and "T / \%" on the y-axis. It supports combined plots with multiple CSV files.
+
+	\item \textbf{UV (Ultraviolet-Visible Spectroscopy) Style}: Plots labeled with "$\lambda$ / nm" on the x-axis and "A / a.u." on the y-axis. It supports combined plots with multiple CSV files.
+\end{itemize}
+
+\subsubsection{Output Files}
+
+The program saves the generated plots as image files in the specified output format (e.g., PNG, SVG, PDF, EPS). The output filenames are derived from the input CSV filenames.
+
+\subsubsection{Combined Plots}
+
+If the \texttt{--combined} flag is specified when executing the program, it can create combined plots that overlay data from multiple CSV files into a single plot.
+
+\subsubsection{Success Message}
+
+After generating the plots, the program prints a success message to indicate that the plots have been created successfully.
+
+\newpage
+\section{Complete Code}\label{sec:code}
+
+For completeness below is the program code in its entirety. There are several comments identified by the ``\#' symbol and highlighted in red that make it easier to read and were found to be essential in the writing.
+\newline
+\lstinputlisting[style=mystyle]{References/PlotCLI.py}
+
+% TODO: fix comment on multiple lines
 
 \end{document}
 %%% Local Variables:
