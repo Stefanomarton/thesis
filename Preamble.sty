@@ -29,6 +29,21 @@
 \usepackage{chemmacros}
 \usepackage{tocloft}
 \usepackage{todonotes}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstdefinestyle{mystyle}{
+	language=Python,
+	basicstyle=\ttfamily,
+	keywordstyle=\color{blue},
+	commentstyle=\color{red},
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	frame=single,
+	breaklines=true,
+	tabsize=2,
+	captionpos=b,
+}
 % \usepackage{epstopdf}
 % \epstopdfsetup{outdir=Structures/}
 %\chemsetup[chemformula]{format=\sffamily}
@@ -51,3 +66,11 @@
 
 \setlength{\cftbeforetoctitleskip}{-2em}
 \lhead{}
+
+
+% add subsubsubsection
+% \setcounter{secnumdepth}{3}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
