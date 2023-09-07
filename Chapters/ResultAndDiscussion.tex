@@ -1,5 +1,6 @@
 \documentclass[../Master.tex]{subfiles}
 \bibliography{../Bibliography}
+
 \begin{document}
 \chapter{Result and discussion}
 
@@ -197,17 +198,75 @@ This possibility was tested with a 1.2 molar ratio of aldehyde to ketone, on an 
 
 It is evident that the effect of the slightly higher ratio is positive, but the effects on the reaction yield of even higher molar ratios have not been investigated: it might be interesting to evaluate this in the future.
 
+
 \subsection{Hydrazine addition to unsaturated precursor}\label{sec:hyd-add-ins}
 
-% TODO: aggiungere reazione di formazione del pirazolo a partire dall'alfa beta insaturo.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=13cm,keepaspectratio]{Structures/pyrazole-form-alternative.eps}
 	\caption{Hydrazine reaction with unsaturated compound}
 \end{figure}
 
+This step is the crucial one to evaluate the effectiveness of the alternative synthesis, given the difficulties encountered in forming the desired product from diketone.
 
-This step is the crucial one for evaluating the effectiveness of the alternative synthesis, given the difficulties encountered in forming the desired product from diketone. The conditions and results obtained for the formation of the pyrazole ring are evaluated, these include different solvents, catalysts, reaction time and use of microwave reactor.
+The reaction mechanism does not differ substantially from that reported for diketone, however several of the difficulties encountered in the previous synthetic pattern, particularly the solubility of the initial compound, should not be encountered in this situation. The mechanism is reported below.
+
+The conditions and results obtained for the formation of the pyrazole ring are evaluated, which include different solvents, catalysts, reaction times and the use of the microwave reactor. The conditions used were chosen from those reported in the literature \cite{leavai_synthesis_2002}, verifying the effectiveness of each procedure and modifying what was reported as needed.
+
+\subsubsection{Acetic Acid}\label{sec:ace-cond}
+
+According to the article in the literature, this synthetic route should be the simplest and most effective one, capable of achieving high reaction yields.\\ The reaction is conducted in acetic acid in the presence of hydrazine, with temperatures and reaction times that may vary depending on the substrate. At the end of the reaction, the product should precipitate spontaneously and the same should be easily recoverable by filtration.
+
+However, on a practical level it was not optimal and the results obtained are discouraging. Neither product nor intermediate formation was observed, which reportedly should have been possible to isolate. No effects were observed even by extending reaction times and raising temperatures. The obtained results are reported below and the detailed experimental information are in the chapter\ \ref{cha:experimental-section}.
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}[b]{cccc}
+		\toprule
+		ID & Temperature [K] & Time [h] & Yield \\
+		\midrule
+		A  & RT              & 1        & -     \\
+		B  & 363             & 3        & -     \\
+		C  & 393             & 48       & -     \\
+		\bottomrule
+	\end{tabular}
+	\caption{Acetic acid reaction yields}\label{tab:hydrazine-ratio}
+\end{table}
+
+The results obtained did not meet expectations; although the reagent dissolved easily at higher temperatures than in test B, no product was recovered.
+In addition, investigation of the composition of the mixture were made difficult by the large amount of acetic acid present. Cooling the mixture succeeded in observing extensive precipitation of what was later identified with difficulty as the initial reagent.
+
+\subsubsection{Methanol with acid and basic catalysis}\label{sec:et-ac-bas}
+
+In addition to the conditions used with acetic acid, which proved to be a failure with this initial reagent, conditions including the use of methanol as a solvent in the presence of acidic and basic catalysts, such as hydrochloric acid and pyridine, are reported in the literature.
+
+In relation to the use of hydrochloric acid as a catalyst the results obtained are poor. The addition of hydrazine to the solution of hydrochloric acid in methanol causes a rather violent reaction, subsequently the initial reactant does not solubilize. In the reaction time no change is observed. No product formation is observed, and the mixture does not develop blue photoluminescence. These reaction conditions were then not further investigated.
+
+Unlike what is found in conditions of acid catalysis, the use of pyridine as a catalyst initially seems to lead to better results.
+The initial reactant completely solubilized and the mixture was left to react under reflux.
+
+% TODO: aggiungere condizioni e meccanismo per questa reazione, incluso intermedio ed utilizzo del microonde.
+% TODO: sistemare anche quaderno in relazione a quanto visto, gli nmr ora ci sono.
+
+\subsubsection{Ethanol}\label{sec:met-only}
+
+As a result of the difficulties encountered previously, several tests were carried out in ethanol alone, at varying temperatures and reaction times, maintaining the molar ratio costant.
+
+The progress of the reaction was checked at room temperature, in the presence of 3 moles of hydrazine per moles of initial reagent, overnight, under strong stirring. The formation of crystalline product, with blue photolumiscence, was observed. What apparently looked like it might be the desired product, upon coupled NMR analysis such as COSY and NOESY turned out to be the hydrazonic intermediate whose structure is given below.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=13cm,keepaspectratio]{Structures/idrazone.eps}
+	\caption{Intermediate compound structure}
+\end{figure}
+
+Indeed, within the literature it was reported that the intermediate could be obtained without proceeding to pyrazole ring closure. By raising the temperature, which should have a positive effect in this case, no change was observed in the product formed despite several hours of reaction. However, the crystallinity of the precipitate formed appears to the eye to be of a higher degree. The structure of the compound identified as an intermediate was again identified using NMR.
+
+\subsubsection{Microwaves}\label{sec:micro}
+
+Microwave reactors have emerged as powerful tools in the field of chemistry \cite{priecel_advantages_2019}, offering numerous advantages over traditional heating methods. \\
+They are able to heat reaction mixtures very quickly, promoting mixing. They also provide granular control of temperature curves and easily allow working at pressures above atmospheric, reaching temperatures above the boiling temperature of the solvent itself at SATP. The amount of solvent used is small, it is not challenging to run reactions with small amounts, and the whole process is energy efficient. \\
+Especially with regard to cyclization reactions and the formation of pyrazolines, several examples are available in the literature \cite{azarifar_microwave-assisted_2003}. The high temperature and pressure make the reactions more selective by providing higher yields; in addition, reaction times are greatly reduced from hours to tens of minutes.
 
 \subsection{Pyrazole Ester Hydrolisis}\label{sec:pyrazole-hydro}
 
@@ -224,7 +283,13 @@ It is important to note, however, that the results obtained refer to small amoun
 
 \todo[inline]{mancano rese e risultati ottenuti}
 
+
 % TODO: rese e risultati ottenuti
+
+
+\subsection{Conclusion, consideration and further development}\label{sec:conclusioni}
+
+% TODO: aggiungere considerazioni riguardo ai risultati ottenuti. Bene l'aldolica rispetto alla claisen, male la parte di pirazolo, peccato per la one pot. Utilizzo di strada alternativa con coupling.
 
 \newpage\section{Electrochemistry}\label{sec:electrochemistry}
 
@@ -240,14 +305,12 @@ Electrochemistry exploration has been carried out on already studied compounds\ 
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=16cm,height=8cm,keepaspectratio]{Structures/dicn-sint.eps}\caption{ 4‐[3‐(4‐cyanophenyl)‐3‐oxopropanoyl]benzonitrile}
+	\includegraphics[width=16cm,height=8cm,keepaspectratio]{Structures/dicn-sint.eps}\caption{4‐[3‐(4‐cyanophenyl)‐3‐oxopropanoyl]benzonitrile}
 \end{figure}
 \todo[inline]{mancano risultati ottenuti}
 
 % TODO: aggiungere risultati ottenuti
 \end{document}
-
-
 
 %%% Local Variables:
 %%% mode: latex
