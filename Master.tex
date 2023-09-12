@@ -6,6 +6,10 @@
 \author{Stefano Marton}
 \date{2023}
 
+\frontmatter
+\begingroup
+\renewcommand{\thetable}{\Roman{table}}
+
 \begin{document}
 \begin{titlepage}
 	\begin{center}
@@ -26,8 +30,27 @@
 \end{titlepage}
 \vspace{1cm}
 
-\chapter*{Summary}
+\newpage
 
+\addcontentsline{toc}{chapter}{Abbreviations}
+\chapter*{Abbreviations}
+\begin{acronym}
+	\acro{DikDiEst}{\iupac{Dimethyl 4,4'-malonyldibenzoate}}
+	\acro{DikDiAc}{\iupac{4,4'-malonyldibenzoic acid}}
+	\acro{PyrDiEst}{\iupac{Methyl 4,4'-(1H-pyrazole-3,5-diyl)dibenzoate}}
+	\acro{PyrDiAc}{\iupac{Dimethyl 4,4'-malonyldibenzoate}}
+	\acro{UnsDiEst}{\iupac{Methyl 4-[(1E)-3-[4-(methoxycarbonyl) phenyl]-3-oxoprop-1-en-1-yl]benzoate}}
+	\acro{DikDiCN}{\iupac{Dimethyl 4,4'-malonyldibenzoate}}
+\end{acronym}
+
+\newpage
+\tableofcontents
+
+\newpage
+\listoffigures
+
+\addcontentsline{toc}{chapter}{Summary}
+\chapter*{Summary}
 \subsection*{CHAPTER 1: INTRODUCTION}
 Over the past 150 year supramolecular chemistry has grown at an exponential rate, with the field expanding to embrace a wide range of applications, in what can be the described as a new chemical space. This chapter aims to provide a brief historical account of the most notable development in supramolecular chemistry, focusing on MOFs and 3D periodic structures as well as their implementation in gas adsorption and electrochemistry applications.
 \newline\subsection*{CHAPTER 2: RESULT AND DISCUSSION}
@@ -37,8 +60,6 @@ Several synthesis and characterization method as been applied, both in the synth
 \newline\subsection*{CHAPTER 4: TOOL DEVELOPMENT}
 During the time spent working on these wide range topics the need of small and reliable analytical tools raised. Being able to analyze and draw a comparison between obtained results in a fast manner has been very important. Across this chapter will be presented a tiny python implementation for fast data analysis and graphs creation based on matplotlib.
 
-\newpage
-\tableofcontents
 
 % First chapter
 \subfile{Chapters/Introduction.tex}
