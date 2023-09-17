@@ -1,16 +1,14 @@
 %++++++++++++++++++++++++++++++++++++++++ 
-\documentclass[a4,11pt]{report}
+\documentclass[a4,11pt,openright]{report}
 \usepackage{Preamble}
 %++++++++++++++++++++++++++++++++++++++++
 \title{Bachelor Thesis}
 \author{Stefano Marton}
-\date{2023}
-
-\frontmatter
-\begingroup
-\renewcommand{\thetable}{\Roman{table}}
+\date{2022/2023}
 
 \begin{document}
+
+\pagenumbering{Roman} %cool numbering for early pages
 \begin{titlepage}
 	\begin{center}
 		\vspace*{6cm}
@@ -19,18 +17,41 @@
 		\vspace{0.5cm}
 		\LARGE
 		\vspace{1.5cm}
-		Use of a ligand containing a pyrazole functionality and two carboxylate groups to construct new MOFs for applications in gas storage
+		Investigation of the synthesis of a new pyrazole dicarboxylate ligand for the construction of new MOFs.
 
 		\vspace{1.5cm}
 		\textbf{Marton Stefano}
 		\vfill
-		July 2023
+		2022 - 2023
 		\vspace{0.8cm}
 	\end{center}
 \end{titlepage}
 \vspace{1cm}
 
-\newpage
+\afterpage{\blankpage}
+
+\chapter*{} %hacky
+\vspace*{\fill}
+\begin{flushleft}
+	\topskip0pt
+	\it
+	I would like to express my heartfelt gratitude to the following individuals whose unwavering support and encouragement made this journey possible:
+
+	First and foremost, I want to extend my deepest appreciation to my loving parents. Your endless support, belief in me, and sacrifices have been the driving force behind my pursuits. Without you, this achievement would not have been possible.
+
+	To my dear friends, your encouragement and understanding during this challenging period have been a source of strength. Your support meant the world to me, and I am truly grateful for the camaraderie we share.
+
+	I extend my sincere thanks to professor Carlucci for your guidance, mentorship, and valuable insights throughout my research. Delia, I appreciate your assistance and guidance as well. To all my fellow group members, your collaboration and the incredible lab environment we had were instrumental in my success.
+
+	Special thanks go to my friend Stefano, who not only provided invaluable input and inspiration for my work but also made sure we had quality downtime together. Your friendship has been a cherished aspect of this journey.
+
+	To everyone who played a part in my academic and personal growth, I am deeply thankful. This work would not have been possible without your support and encouragement.
+	\vspace*{\fill}
+
+\end{flushleft}
+\vspace*{\fill}
+
+\afterpage{\blankpage}
 
 \addcontentsline{toc}{chapter}{Abbreviations}
 \chapter*{Abbreviations}
@@ -44,6 +65,7 @@
 \end{acronym}
 
 \newpage
+
 \tableofcontents
 
 \newpage
@@ -52,7 +74,7 @@
 \addcontentsline{toc}{chapter}{Summary}
 \chapter*{Summary}
 \subsection*{CHAPTER 1: INTRODUCTION}
-Over the past 150 year supramolecular chemistry has grown at an exponential rate, with the field expanding to embrace a wide range of applications, in what can be the described as a new chemical space. This chapter aims to provide a brief historical account of the most notable development in supramolecular chemistry, focusing on MOFs and 3D periodic structures as well as their implementation in gas adsorption and electrochemistry applications.
+Over the past 150 year supramolecular chemistry has grown at an exponential rate, with the field expanding to embrace a wide range of applications, in what can be described as a new chemical space. This chapter aims to provide a brief historical account of the most notable development in supramolecular chemistry, focusing on MOFs and 3D periodic structures as well as their implementation in gas adsorption and electrochemistry applications.
 \newline\subsection*{CHAPTER 2: RESULT AND DISCUSSION}
 The construction of 3D periodic solid structure oriented towards specific gas adsorption remain a challenging synthetic problem for chemists, several problems related to their development and use must be accounted. In this chapter will be reported the advancement in the synthesis of a pyrazole based ligand and the utilization of a 1,3-diketones ligand in electrochemistry oriented application.
 \newline\subsection*{CHAPTER 3: EXPERIMENTAL SECTION}
@@ -60,6 +82,8 @@ Several synthesis and characterization method as been applied, both in the synth
 \newline\subsection*{CHAPTER 4: TOOL DEVELOPMENT}
 During the time spent working on these wide range topics the need of small and reliable analytical tools raised. Being able to analyze and draw a comparison between obtained results in a fast manner has been very important. Across this chapter will be presented a tiny python implementation for fast data analysis and graphs creation based on matplotlib.
 
+% back to standard number
+\pagenumbering{arabic}
 
 % First chapter
 \subfile{Chapters/Introduction.tex}
@@ -73,7 +97,8 @@ During the time spent working on these wide range topics the need of small and r
 % Fourth chapter
 \subfile{Chapters/ToolDevelopment.tex}
 
+% TODO: aggiungere appendice riassuntiva di tutte le condizioni per la sintesi del legante pirazolico.
+% TODO: aggiungere appendice per NMR diagnostici nel processo di sviluppo.
 
-\bibliographystyle{unsrt}
-\bibliography{Bibliography}
+\printbibliography
 \end{document}
