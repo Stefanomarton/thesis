@@ -2,7 +2,118 @@
 \usepackage{mathtools}
 \usepackage{parskip}
 \usepackage{unicode-math}
-\usepackage{natbib}
+\usepackage[utf8]{inputenc}
+\usepackage[
+	% style=nejm,
+	maxcitenames=3,
+	uniquelist=false,
+	autocite=inline,
+	backend=biber,
+	isbn=false,
+	url=false,
+	giveninits=true,
+	style=numeric,
+	sorting=ynt,
+	usetranslator=false,
+	date=year,
+	punctfont=true,
+	dashed=false,
+]{biblatex}
+
+% Suppress unwanted fields, need recompilation but destroy everything
+\DeclareSourcemap{
+	\maps{
+		\map{
+			\step[fieldset=month, null]
+			\step[fieldset=address, null]
+			\step[fieldset=location, null]
+			\step[fieldset=url, null]
+			\step[fieldset=isbn, null]
+			\step[fieldset=number, null]
+			\step[fieldset=note, null]
+		}
+	}
+}
+
+% add bib resources
+\addbibresource{Bibliography.bib}
+
+% remove "In:" before article
+\renewbibmacro{in:}{}
+
+% change delimiter after title
+\DeclareDelimFormat[bib]{nametitledelim}{%
+	\adddot\space}
+
+% removing pp. before pages
+\DeclareFieldFormat[article]{pages}{#1}
+
+% punct after autor
+\renewcommand\labelnamepunct{\adddot\comma}
+
+% Remove DOI: prefix
+% \DeclareFieldFormat{doi}{%
+% 	\ifhyperref
+% 	{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+% 	{\nolinkurl{#1}}}
+
+% add comma after journal title.
+\DeclareFieldFormat{journaltitle}{\mkbibemph{#1}\isdot}
+\renewbibmacro*{journal+issuetitle}{%
+	\usebibmacro{journal}%
+	\setunit*{\adddot\space}%
+	\iffieldundef{series}
+	{}
+	{\newunit
+		\printfield{series}%
+		\setunit{\addspace}}%
+	\usebibmacro{volume+number+eid}%
+	\setunit{\addspace}%
+	\usebibmacro{issue+date}%
+	\setunit{\addcolon\space}%
+	\usebibmacro{issue}%
+	\newunit}
+
+% remove parethesis of year
+\renewbibmacro*{issue+date}{%
+	\setunit{\addcomma\space}% NEW
+	%  \printtext[parens]{% DELETED
+	\iffieldundef{issue}
+	{\usebibmacro{date}}
+	{\printfield{issue}%
+		\setunit*{\addspace}%
+		%       \usebibmacro{date}}}% DELETED
+		\usebibmacro{date}}% NEW
+	\newunit}
+
+\AtEveryBibitem{%
+	% \clearfield{volume}%
+	\clearfield{number}}
+}
+
+% make year bold
+\DeclareFieldFormat{date}{\bfseries{#1}}
+
+% make volume italic
+\DeclareFieldFormat[article,periodical]{volume}{\mkbibitalic{#1}}
+
+% swap year before volume
+\renewbibmacro*{journal+issuetitle}{%
+	\usebibmacro{journal}%
+	\setunit*{\addspace}%
+	\iffieldundef{series}
+	{}
+	{\newunit
+		\printfield{series}%
+		\setunit{\addspace}}%
+	\setunit{\addspace}%
+	\usebibmacro{issue+date}%
+	\setunit{\addcolon\space}%
+	\usebibmacro{issue}%
+	\setunit{\addcomma\space}%
+	\usebibmacro{volume+number+eid}%
+	\newunit}
+
 \usepackage{tabularx} % extra features for tabular environment
 \usepackage{amsmath}  % improve math presentation
 \usepackage{graphicx} % takes care of graphic including machinery
@@ -76,3 +187,12 @@
 \titlespacing*{\paragraph}
 {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
+
+% package and command for newpage
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+	\addtocounter{page}{-1}%
+	\newpage}
