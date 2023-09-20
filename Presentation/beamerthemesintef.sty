@@ -103,7 +103,7 @@
 \setbeamercolor{author}{fg=black}
 \setbeamercolor{date}{fg=black}
 
-\setbeamerfont{author}{size=\scriptsize}
+\setbeamerfont{author}{size=\tiny}
 \setbeamerfont{date}{size=\tiny}
 \setbeamerfont{title}{series=\bfseries}
 \setbeamerfont{subtitle}{series=\mdseries,size=\footnotesize}
@@ -146,7 +146,7 @@
 \def\@IDnumber{}
 
 \newcommand{\course}[1]{\def\@courseLabel{#1}}
-\newcommand{\IDnumber}[1]{\def\@IDnumber{#1}}
+\newcommand{\IDnumber}[1]{\tiny \def\@IDnumber{#1}}
 
 % Define the title page
 \setbeamertemplate{title page}{%
@@ -164,7 +164,7 @@
 		{\usebeamerfont{author}\usebeamercolor[fg]{author}\textbf{\insertauthor} \ifdefempty{\@IDnumber}{}{(\@IDnumber)}}
 
 		% TODO: Cambiare data
-		{\usebeamerfont{date}\usebeamercolor[fg]{date}25 Settembre 2023}
+		{\usebeamerfont{date}\usebeamercolor[fg]{date}\tiny 28 Settembre 2023}
 	\end{beamercolorbox}
 }
 
