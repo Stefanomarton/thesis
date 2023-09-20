@@ -5,7 +5,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[
 	% style=nejm,
-	maxcitenames=3,
+	maxcitenames=1,
 	uniquelist=false,
 	autocite=inline,
 	backend=biber,
@@ -13,7 +13,7 @@
 	url=false,
 	giveninits=true,
 	style=numeric,
-	sorting=ynt,
+	sorting=none,
 	usetranslator=false,
 	date=year,
 	punctfont=true,
@@ -115,9 +115,12 @@
 	\newunit}
 
 \usepackage{tabularx} % extra features for tabular environment
+\usepackage{multirow}
 \usepackage{amsmath}  % improve math presentation
+\usepackage{dirtree}
 \usepackage{graphicx} % takes care of graphic including machinery
 \usepackage{multicol}
+\usepackage{array}
 \usepackage{booktabs}
 \usepackage{pdfpages}
 \usepackage{mathastext} % make textrm standard for math eq.
@@ -141,8 +144,14 @@
 \usepackage{tocloft}
 \usepackage{todonotes}
 \usepackage{listings}
+\lstset{basicstyle=\ttfamily}
 \usepackage{xcolor}
 \usepackage[withpage]{acronym}
+\usepackage{mwe} %Required to have smaller caption
+\usepackage{pdflscape}
+\usepackage{lipsum}
+\usepackage{booktabs}
+
 
 \lstdefinestyle{mystyle}{
 	language=Python,
@@ -163,12 +172,13 @@
 % \setatomsep{2em}
 % \setdoublesep{.6ex}
 % \setbondstyle{semithick}
+\definecolor{myblue}{HTML}{3366CC}
 \hypersetup{
 	colorlinks=true,       % false: boxed links; true: colored links
-	linkcolor=blue,        % color of internal links
-	citecolor=blue,        % color of links to bibliography
-	filecolor=magenta,     % color of file links
-	urlcolor=blue
+	linkcolor=myblue,        % color of internal links
+	citecolor=myblue,        % color of links to bibliography
+	filecolor=myblue,     % color of file links
+	urlcolor=myblue
 }
 
 \titleformat{\chapter}
@@ -196,3 +206,5 @@
 	\thispagestyle{empty}%
 	\addtocounter{page}{-1}%
 	\newpage}
+
+\usepackage{minted}
