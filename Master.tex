@@ -6,29 +6,63 @@
 \author{Stefano Marton}
 \date{2022/2023}
 
+\makeatletter
+\def\cleardoublepage{\clearpage%
+	\if@twoside
+		\ifodd\c@page\else
+			\vspace*{\fill}
+			\hfill
+			\begin{center}
+				This page intentionally left blank.
+			\end{center}
+			\vspace{\fill}
+			\thispagestyle{empty}
+			\newpage
+			\if@twocolumn\hbox{}\newpage\fi
+		\fi
+	\fi
+}
+\makeatother
+
 \begin{document}
 
 \pagenumbering{Roman} %cool numbering for early pages
 \begin{titlepage}
-	\begin{center}
-		\vspace*{6cm}
-		\Huge
-		\textbf{Bachelor Thesis}\\
-		\vspace{0.5cm}
-		\LARGE
-		\vspace{1.5cm}
-		Investigation of the synthesis of a new pyrazole dicarboxylate ligand for the construction of new MOFs.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=6cm]{Images/Logo_Università_degli_Studi_di_Milano.pdf}
+	\end{figure}
+	\centering \Large
+	\textbf{UNIVERSITY OF MILAN}\\
+	\textbf{FACULTY OF CHEMICAL SCIENCE AND TECHNOLOGY}
 
-		\vspace{1.5cm}
-		\textbf{Marton Stefano}
-		\vfill
-		2022 - 2023
-		\vspace{0.8cm}
+	BACHELOR'S DEGREE IN CHEMISTRY
+	\begin{center}
+		\vspace*{2cm}
+		\LARGE
+		\textbf{Investigation of the synthesis of a new pyrazole dicarboxylate ligand for the construction of new MOFs}
 	\end{center}
+	\vspace*{2.6cm}
+	\begin{flushleft}
+		\fontsize{12.5}\selectfont \textbf{\fontsize{12.5}\selectfont Supervisor}: Professor Lucia Carlucci\\
+		\fontsize{12.5}\selectfont \textbf{\fontsize{12.5}\selectfont Co-supervisor}: Professor Pierluigi Mercandelli \\
+	\end{flushleft}
+	\vspace*{1.3cm}
+	\begin{flushright}
+		\begin{tabular}{l}
+			\fontsize{12.5}\selectfont \textbf{\fontsize{12.5}\selectfont Candidate}: Stefano Marton \\
+			\fontsize{12.5}\selectfont \textbf{\fontsize{12.5}\selectfont ID number}: 962848
+		\end{tabular}
+	\end{flushright}
+	\vspace{2cm}
+	\begin{center}
+		\fontsize{12.5}\selectfont Academic Year 2022-2023
+	\end{center}
+	\vspace*{\fill}
 \end{titlepage}
-\vspace{1cm}
 
 \afterpage{\blankpage}
+\cleardoublepage
 
 \chapter*{} %hacky
 \vspace*{\fill}
@@ -56,31 +90,42 @@
 \addcontentsline{toc}{chapter}{Abbreviations}
 \chapter*{Abbreviations}
 \begin{acronym}
-	\acro{DikDiEst}{\iupac{Dimethyl 4,4'-malonyldibenzoate}}
-	\acro{DikDiAc}{\iupac{4,4'-malonyldibenzoic acid}}
-	\acro{PyrDiEst}{\iupac{Methyl 4,4'-(1H-pyrazole-3,5-diyl)dibenzoate}}
-	\acro{PyrDiAc}{\iupac{Dimethyl 4,4'-malonyldibenzoate}}
-	\acro{UnsDiEst}{\iupac{Methyl 4-[(1E)-3-[4-(methoxycarbonyl) phenyl]-3-oxoprop-1-en-1-yl]benzoate}}
-	\acro{DikDiCN}{\iupac{Dimethyl 4,4'-malonyldibenzoate}}
+	\acro{DikDiEst}{\iupac{\small Dimethyl 4,4'-malonyldibenzoate}}
+	\acro{DikDiAc}{\iupac{\small 4,4'-malonyldibenzoic acid}}
+	\acro{PyrDiEst}{\iupac{\small Methyl 4,4'-(1H-pyrazole-3,5-diyl)dibenzoate}}
+	\acro{PyrDiAc}{\iupac{\small Dimethyl 4,4'-malonyldibenzoate}}
+	\acro{UnsDiEst}{\iupac{\small Methyl 4-[(1E)-3-[4-(methoxycarbonyl)phenyl]-3-oxoprop-1-en-1-yl]benzoate}}
+	\acro{DikDiCN}{\iupac{\small Dimethyl 4,4'-malonyldibenzoate}}
+	\acro{Fe III metalloligand}{\small \iupac{Tris[1,3-bis(4’-cyanophenyl)-1,3-propanedionato]iron(III)}}
+	\acro{Co III metalloligand}{\small \iupac{Tris[1,3-bis(4’-cyanophenyl)-1,3-propanedionato]cobalt(III)}}
+	\acro{Zn II metalloligand}{\small \iupac{Tetraethylammonium tris[1,3-bis(4’-cyanophenyl)-1,3propanedionato]cobaltate(II)}}
+	\acro{Co II metalloligand}{\small \iupac{Tetraethylammonium tris[1,3-bis(4’-cyanophenyl)-1,3-propanedionato]zincate(II)}}
+	\acro{Fe III MOF}{\iupac{\small \(\{[Fe^{III}(DikDiCN)_{3}Ag_{3}](ClO_{4})_{3}\}\cdot Solv\)}}
 \end{acronym}
 
+\afterpage{\blankpage}
 \newpage
 
 \tableofcontents
 
+\afterpage{\blankpage}
 \newpage
-\listoffigures
+% \listoffigures
 
 \addcontentsline{toc}{chapter}{Summary}
 \chapter*{Summary}
 \subsection*{CHAPTER 1: INTRODUCTION}
 Over the past 150 year supramolecular chemistry has grown at an exponential rate, with the field expanding to embrace a wide range of applications, in what can be described as a new chemical space. This chapter aims to provide a brief historical account of the most notable development in supramolecular chemistry, focusing on MOFs and 3D periodic structures as well as their implementation in gas adsorption and electrochemistry applications.
-\newline\subsection*{CHAPTER 2: RESULT AND DISCUSSION}
+\newline\subsection*{CHAPTER 2: RESULTS AND DISCUSSION}
 The construction of 3D periodic solid structure oriented towards specific gas adsorption remain a challenging synthetic problem for chemists, several problems related to their development and use must be accounted. In this chapter will be reported the advancement in the synthesis of a pyrazole based ligand and the utilization of a 1,3-diketones ligand in electrochemistry oriented application.
 \newline\subsection*{CHAPTER 3: EXPERIMENTAL SECTION}
-Several synthesis and characterization method as been applied, both in the synthesis of pyrazole based ligand and 1,3-diketones MOF electrochemistry exploration, in order to achieve the results discussed earlier. They will be analyzed in great detail in this chapter.
+Several synthetic procedures and characterization methods have been applied, both in the synthesis of pyrazole based ligand and 1,3-diketones MOF electrochemistry exploration, in order to achieve the results discussed earlier. They will be analyzed in great detail in this chapter.
 \newline\subsection*{CHAPTER 4: TOOL DEVELOPMENT}
 During the time spent working on these wide range topics the need of small and reliable analytical tools raised. Being able to analyze and draw a comparison between obtained results in a fast manner has been very important. Across this chapter will be presented a tiny python implementation for fast data analysis and graphs creation based on matplotlib.
+
+
+\afterpage{\blankpage}
+\newpage
 
 % back to standard number
 \pagenumbering{arabic}
@@ -97,8 +142,8 @@ During the time spent working on these wide range topics the need of small and r
 % Fourth chapter
 \subfile{Chapters/ToolDevelopment.tex}
 
-% TODO: aggiungere appendice riassuntiva di tutte le condizioni per la sintesi del legante pirazolico.
-% TODO: aggiungere appendice per NMR diagnostici nel processo di sviluppo.
+\printbibliography[heading=bibintoc]
 
-\printbibliography
+\subfile{Chapters/Appendix.tex}
+
 \end{document}
