@@ -5,17 +5,22 @@
 \chapter{Tool Development}\label{chap:tooldev}
 
 \section{Ultra specific command-line based software, why?}\label{sec:specific-software}
-In recent times, there has been a decline in the affinity towards command-line interfaces, which is a regrettable development. While graphical user interfaces (GUIs) have gained popularity due to their intuitive nature and visual appeal, the diminishing use of command-line tools is unfortunate. Despite their perceived complexity, command-line interfaces offer unparalleled efficiency, flexibility, and control, making them indispensable for certain tasks and user groups. It is important to recognize the value of command-line tools and the unique advantages they bring to the table, fostering a balanced approach that embraces both GUIs and command-line interfaces.\\
-Today, there is still a need for ultra-specific command-line-based tools despite the availability of graphical user interfaces (GUIs) for several reasons:
+In recent times, there has been a decline in the affinity towards command-line interfaces (TUIs), which is a regrettable development. While graphical user interfaces (GUIs) have gained popularity due to their intuitive nature and visual appeal, the diminishing use of command-line tools is unfortunate. Despite their perceived complexity, command-line interfaces offer unparalleled efficiency, flexibility, and control, making them indispensable for certain tasks and user groups. It is important to recognize the value of command-line tools and the unique advantages they bring to the table, fostering a balanced approach that embraces both GUIs and command-line interfaces.
 
-\begin{enumerate}
-	\item Efficiency: Command-line tools often offer a more efficient and streamlined way of performing tasks compared to GUIs. With command-line interfaces, users can execute complex operations using concise commands and leverage scripting capabilities to automate repetitive tasks. This efficiency is particularly valuable in scenarios involving large-scale data processing, system administration, or software development.
-	\item Flexibility and Customizability: Command-line tools provide users with a high degree of flexibility and customizability. They offer a wide range of options, flags, and parameters that can be combined to achieve specific outcomes. Users can tailor commands to their specific needs, combining different tools and building complex workflows. This level of control and adaptability is often preferred by power users and professionals who require fine-grained control over their tools.
-	\item Remote Access and Automation: Command-line tools are ideal for remote access and automation scenarios. Through remote shell access, users can manage and control systems from anywhere, which is particularly useful for server administration, cloud computing, or managing distributed environments. Additionally, command-line tools can be easily integrated into scripts and workflows, allowing for automated execution of tasks and easy integration with other tools or systems.
-	\item Resource Efficiency: GUIs typically consume more system resources compared to command-line tools. This is because GUIs require graphical rendering, user interface components, and other overhead, whereas command-line tools operate in a text-based environment, requiring fewer system resources. In resource-constrained environments or when dealing with large-scale operations, command-line tools can be more efficient and less demanding on the system.
-	\item  Reproducibility and Version Control: Command-line tools facilitate reproducibility and version control in software development and data analysis workflows. By documenting the specific commands and parameters used, it becomes easier to reproduce results or share workflows with others. Additionally, version control systems like Git are well-suited for tracking changes to text-based code and configuration files, making it easier to collaborate and manage projects effectively.
-\end{enumerate}
+Today, there is still a need for ultra-specific command-line-based tools despite the availability of graphical user interfaces (GUIs) for several reasons.
+
+TUIs tools often offer a more efficient and streamlined way of performing tasks compared to GUIs. With command-line interfaces, users can execute complex operations using concise commands and leverage scripting capabilities to automate repetitive tasks. This efficiency is particularly valuable in scenarios involving large-scale data processing, system administration, or software development.
+
+Command-line tools provide users with a high degree of flexibility and customizability. They offer a wide range of options, flags, and parameters that can be combined to achieve specific outcomes. Users can tailor commands to their specific needs, combining different tools and building complex workflows. This level of control and adaptability is often preferred by power users and professionals who require fine-grained control over their tools.
+
+Terminal tools are ideal for remote access and automation scenarios. Through remote shell access, users can manage and control systems from anywhere, which is particularly useful for server administration, cloud computing, or managing distributed environments. Additionally, command-line tools can be easily integrated into scripts and workflows, allowing for automated execution of tasks and easy integration with other tools or systems.
+
+Moreover, GUIs typically consume more system resources compared to command-line tools. This is because GUIs require graphical rendering, user interface components, and other overhead, whereas command-line tools operate in a text-based environment, requiring fewer system resources. In resource-constrained environments or when dealing with large-scale operations, command-line tools can be more efficient and less demanding on the system.
+
+Terminal based programs facilitate reproducibility and version control in software development and data analysis workflows. By documenting the specific commands and parameters used, it becomes easier to reproduce results or share workflows with others. Additionally, version control systems like Git are well-suited for tracking changes to text-based code and configuration files, making it easier to collaborate and manage projects effectively.
+
 \subsection{Open Source Software}\label{sec:open-source-software}
+
 Open source software plays a significant role in the fields of university education and chemistry. In academia, the use of open source software promotes collaboration, knowledge sharing, and innovation. Universities often encourage the adoption of open source tools as they provide students and researchers with accessible and cost-effective alternatives to proprietary software.
 
 In the domain of chemistry, open source software offers a wide range of benefits. It empowers researchers to analyze, model, and simulate chemical systems, enhancing their understanding and enabling them to make informed decisions. Open source software encourages transparency and reproducibility in scientific experiments, as the source code is freely available for scrutiny and modification.
@@ -27,7 +32,7 @@ Moreover, open source software aligns with the principles of academic freedom an
 Overall, open source software in the context of university and chemistry serves as a catalyst for innovation, education, and scientific progress. Its accessibility, flexibility, and collaborative nature make it an invaluable resource for students, researchers, and professionals, helping to accelerate breakthroughs and advancements in the field of chemistry.
 
 \subsubsection{Python and Matplotlib}\label{sec:py-plt}
-Python and the matplotlib library have played pivotal roles in the fields of university education and chemistry due to their versatility, ease of use, and extensive visualization capabilities.
+Python and the matplotlib\ \cite{hunter_matplotlib_2007} library have played pivotal roles in the fields of university education and chemistry due to their versatility, ease of use, and extensive visualization capabilities.
 
 Python, being a powerful and accessible programming language, has gained immense popularity among students and researchers. Its intuitive syntax and extensive libraries make it an ideal choice for scientific computing and data analysis tasks. In the context of university education, Python serves as an effective tool for teaching programming fundamentals, data manipulation, and numerical computing.
 
@@ -48,55 +53,104 @@ This tool will strive to uphold the principles of open-source software, facilita
 
 \subsection{Major Functionalities}
 
-% TODO: aggiungere funzionalitá implementate con qualche esempio e codice completo. Aggiungere funzionalitá help ed esempio di utilizzo per ognuno.
+The Python program is organized into several components, including a command-line interface, a \texttt{CSVPlotter} class, and specific plot styles.
+Complete source code of the program is reported in the appendix\ \ref{ap:code}. Here is presented an overview of its functionality.
 
-The Python program is organized into several components, including a command-line interface, a \texttt{CSVPlotter} class, and specific plot styles. Here is an overview of its functionality:
-
-\subsubsection{Command-Line Interface}
-
-The program utilizes the \texttt{click} library to create a command-line interface, allowing users to execute it from the command line with various options and arguments.
-
-\subsubsection{CSVPlotter Class}
-
+The program utilizes the \texttt{click} library to create a command-line interface, allowing users to execute it from the command line with various options and arguments.\\
 The core of the program is the \texttt{CSVPlotter} class, responsible for handling the following tasks:
-
 \begin{itemize}
 	\item Initializing with parameters such as CSV file paths, output format, plot style, and the option to create combined plots.
 	\item Reading CSV files and extracting data (x and y values) for plotting.
-	\item Generating plots based on the specified plot style, supporting styles like IR, HNMR, CNMR, and UV spectroscopy.
+	\item Generating plots based on the specified plot style, supporting styles like IR and UV spectroscopy.
 	\item Saving the generated plots as image files in the chosen output format.
 \end{itemize}
-
-\subsubsection{Supported Plot Styles}
-
 The program supports multiple plot styles, each with its specific configurations:
-
 \begin{itemize}
-	\item \textbf{IR (Infrared Spectroscopy) Style}: Plots labeled with "Wave Number / $cm^{-1}$" on the x-axis and "T / \%" on the y-axis. It supports combined plots with multiple CSV files.
-
-	\item \textbf{UV (Ultraviolet-Visible Spectroscopy) Style}: Plots labeled with "$\lambda$ / nm" on the x-axis and "A / a.u." on the y-axis. It supports combined plots with multiple CSV files.
+	\item IR Infrared Spectroscopy: plots labeled with "Wave Number / $cm^{-1}$" on the x-axis and "T / \%" on the y-axis. It supports combined plots with multiple CSV files.
+	\item UV (Ultraviolet-Visible Spectroscopy: plots labeled with "$\lambda$ / nm" on the x-axis and "A / a.u." on the y-axis. It supports combined plots with multiple CSV files.
 \end{itemize}
-
-\subsubsection{Output Files}
-
 The program saves the generated plots as image files in the specified output format (e.g., PNG, SVG, PDF, EPS). The output filenames are derived from the input CSV filenames.
-
-\subsubsection{Combined Plots}
-
 If the \texttt{--combined} flag is specified when executing the program, it can create combined plots that overlay data from multiple CSV files into a single plot.
 
-\subsubsection{Success Message}
+To access the functions described, it is necessary to use a series of flags, which are listed below for completeness.
 
-After generating the plots, the program prints a success message to indicate that the plots have been created successfully.
+\begin{itemize}
+	\item \texttt{--style [IR|UV]} allows you to select the desired graphic style
+	\item \texttt{--output-format [png|svg|pdf|eps]} allows you to select the desired output format
+	\item \texttt{--combined} allows you to create overlayed plots
+	\item \texttt{--help} display the help message with flags descriptions
+\end{itemize}
 
-\newpage
-\section{Complete Code}\label{sec:code}
+\subsection{What works and what doesn't}
+The program is an ongoing work in progress.\\
+At present, the functions outlined above are fully operational, although the code found in the appendix \ref{ap:code} contains some allusions to NMR spectra.
+It's worth acknowledging that numerous libraries are accessible, enabling the manipulation and generation of spectra, even for NMR data. Regrettably, the expertise and parameter demands required are consequential, particularly for two-dimensional spectra where a parametric system must be established to manage the visual representation produced by Plotty.\\
+Additionally, the current programme's testing has been predominantly completed on the Linux operating system; hence, in future, compiling the program is vital to make the binaries accessible on various platforms.\\
+And finally, to adhere to the aforementioned principles and improve the effectiveness of the CLI utility, it will be necessary to create a more comprehensive \texttt{--help} flag to better guide the user in programme usage.
 
-For completeness below is the program code in its entirety. There are several comments identified by the ``\#' symbol and highlighted in red that make it easier to read and were found to be essential in the writing.
-\newline
-\lstinputlisting[style=mystyle]{References/PlotCLI.py}
+\subsection{Examples}
 
-% TODO: aggiungere esempi di utilizzi, e chiarire lo scopo
+\subsubsection{Create a IR combined plot for multiple files}
+
+For example, consider starting in the \texttt{csvFiles} folder is possibile to create a single plot with multiple data overlayed inside the graph.\\
+
+\dirtree{%
+	.1 \bf csvFiles.
+	.2 csv1.csv.
+	.2 csv2.csv.
+	.2 csv3.csv.
+	.2 csv4.csv.
+}
+In order to create an IR combined plot from files \texttt{csv1} and \texttt{csv2} the following command have to be executed:
+\begin{lstlisting}
+  $ python Plotty --style IR --output-format png csv1.csv csv2.csv 
+\end{lstlisting}
+
+\subsubsection{Create a UV plot for all files in a folder}
+
+Consider starting in the \texttt{csvFiles} folder is possibile to create multiple single plot for all files in the folder.\\
+
+\dirtree{%
+	.1 \bf csvFiles.
+	.2 csv1.csv.
+	.2 csv2.csv.
+	.2 csv3.csv.
+	.2 csv4.csv.
+}
+
+In order to create multiple UV plot from files in the csvFiles folder the following command have to be executed:
+
+\begin{lstlisting}
+  $ python Plotty --style UV --output-format png *
+\end{lstlisting}
+
+\subsubsection{Create a combined IR plot for all files in a folder which name start with test}
+
+Based on the basic command listed above, here is reported a more complex example.
+For example, consider starting in the \texttt{csvFiles} folder is possibile to create multiple single plot for all files in the folder.\\
+
+\dirtree{%
+	.1 \bf csvFiles.
+	.2 csv-acid.csv.
+	.2 csv-acid.csv.
+	.2 csv-ester.csv.
+	.2 csv-ammine.csv.
+	.2 csv-ammine.csv.
+	.2 csv-ammine.csv.
+}
+
+In order to create multiple UV plot from files in the csvFiles folder the following command have to be executed:
+
+\begin{lstlisting}
+  $ python Plotty --style UV --output-format png *ammine.csv
+\end{lstlisting}
+
+\subsubsection{Create a UV plot for all files created today}
+An example of Plotty implementation in a complex command is presented and reported. Based on standard \texttt{UNIX} like \texttt{find} and \texttt{date} is possible to create single plot file for each file created today.\\
+\begin{lstlisting}
+$ find /your/directory/path -type f -ctime 0 -exec *Plotty Command*;
+\end{lstlisting}
+Where \texttt{*Plotty Command*} could be any of the already reported way of using Plotty.
 
 \end{document}
 
