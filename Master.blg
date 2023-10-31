@@ -1,48 +1,15 @@
-This is BibTeX, Version 0.99d (TeX Live 2023/Arch Linux)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: Master.aux
-The style file: unsrt.bst
-Database file #1: Bibliography.bib
-Warning--there's a number but no volume in pluczyk_using_2018
-You've used 11 entries,
-            1791 wiz_defined-function locations,
-            521 strings with 6178 characters,
-and the built_in function-call counts, 2908 in all, are:
-= -- 252
-> -- 150
-< -- 0
-+ -- 54
-- -- 43
-* -- 275
-:= -- 477
-add.period$ -- 33
-call.type$ -- 11
-change.case$ -- 11
-chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 97
-empty$ -- 262
-format.name$ -- 43
-if$ -- 605
-int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 11
-newline$ -- 58
-num.names$ -- 11
-pop$ -- 14
-preamble$ -- 1
-purify$ -- 0
-quote$ -- 0
-skip$ -- 33
-stack$ -- 0
-substring$ -- 269
-swap$ -- 11
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
-warning$ -- 1
-while$ -- 28
-width$ -- 13
-write$ -- 122
-(There was 1 warning)
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'Master.blg'
+[59] biber:340> INFO - === lun set 25, 2023, 21:13:41
+[70] Biber.pm:419> INFO - Reading 'Master.bcf'
+[122] Biber.pm:979> INFO - Found 20 citekeys in bib section 0
+[135] Biber.pm:4419> INFO - Processing section 0
+[142] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
+[144] bibtex.pm:1713> INFO - LaTeX decoding ...
+[189] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography.bib'
+[316] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[316] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[316] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[316] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[325] bbl.pm:660> INFO - Writing 'Master.bbl' with encoding 'UTF-8'
+[331] bbl.pm:763> INFO - Output to Master.bbl

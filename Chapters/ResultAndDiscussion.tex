@@ -1,7 +1,9 @@
 \documentclass[../Master.tex]{subfiles}
-% \bibliography{../Bibliography}
+\bibliography{../Bibliography}
 
 \begin{document}
+\afterpage{\blankpage}
+\cleardoublepage
 
 \chapter{Results and discussion}
 
@@ -9,7 +11,7 @@
 
 \subsection{Starting Materials}\label{sec:starting-materials}
 
-While several ligands were synthesized and utilized within the research group led by Professor L. Carlucci, my specific contribution focused exclusively on one of these ligands, that is based upon an already studied one. The structure of the starting material, 4,4’-malonyldibenzoic, and the retrosynthetic approch to it's reported in \ref{fig:dikest2-retro}.
+While several ligands were synthesized and utilized within the research group led by Professor L. Carlucci, my specific contribution focused exclusively on one of these ligands, that is based upon an already studied one. The structure of the starting material, 4,4’-malonyldibenzoic, and the retrosynthetic approch to it's reported in\ \ref{fig:dikest2-retro}.
 
 \begin{figure}[h]
 	\centering
@@ -316,7 +318,7 @@ Instead, removal with NaOH in MeOH:H$_{2}$O 1:1 could give better results, with 
 The tests carried out yielded only a few tens of milligrams of acid from less than a hundred milligrams of starting ester. The ester subjected to hydrolysis was always derived from different syntheses and processes, and the appearance of the reaction mixture always varied slightly in colour and behaviour, especially with regard to the pH at which the small product formed began to precipitate.
 The data for this reaction cannot be reliably summarised.Thus, this aspect of the synthesis will have to be finalized when the ester synthesis is optimised.
 
-\subsection{Conclusion, consideration and further development}\label{sec:conclusioni}
+\subsection{Conclusions, considerations and further development}
 
 Due to the extensive number of trials conducted, the initially reaction path, which included the option of acquiring the required product from DikDiEst, cannot be deemed feasible. Whilst the cross-Claisen reaction allows for the acquisition of the crucial intermediate for the direct addition of hydrazine, the latter step is currently infeasible as the yields are not satisfactory to ensure the possibility of exploring the reactivity of the binder in question.\\
 However, the challenges faced during this stage have highlighted significant factors that must be considered to avoid prospective obstacles. Notably, solubility has been identified as a vital component to enable the modification and variation of previously examined ligands, which can also pose a demanding and resource-intensive undertaking.
@@ -349,7 +351,7 @@ When cyclic voltammetry (CV) is combined with or ultraviolet-visible and near-in
 
 \subsection{Ligands and Background}
 
-Electrochemistry exploration has been carried out on already studied and synthetized compounds\ \cite{carlucci_heterometallic_2010}. In the following section, the properties and peculiarities of the ligands and the monomers and MOFs connected to them will be outlined, with the intention of clarifying the significance of the corresponding electrochemical investigation.\\
+Electrochemistry exploration has been carried out on already studied and synthetized compounds\ \cite{carlucci_heterometallic_2010}. In the following section, the properties and peculiarities of the ligands and the monomers and MOFs connected to them will be outlined, with the intention of clarifying the significance of the corresponding electrochemical investigation.
 
 Detailed synthesis of ligand, monomers and MOFs are given in chapter\ \ref{cha:experimental-section}.
 
@@ -403,7 +405,93 @@ Primarily, the ligand accommodates two active redox groups, specifically the nit
 The analysis of the electrochemical activity of monomers can verify the effect of coordination on the groups present. This can be achieved through examining the function of various metals with which the ligand forms monomers. Despite varying metals, the structure of the trichelate remains constant.\\
 The MOFs resulting from the reaction of metalloligands with silver salts are highly noteworthy from an electrochemical perspective since, as previously mentioned, the structures  remain intact even as the metal and any counterions undergo modification.
 
-\todo[inline]{mancano risultati, in attesa report}
+\subsection{Ligands set}
+
+The electrochemical properties of a ligand systematic series, all of them CN-terminated (Figure \ref{fig:lig-set}). \\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=10cm,keepaspectratio]{Structures/mussini/leganti.eps}
+	\caption{Ligand set}
+	\label{fig:lig-set}
+\end{figure}
+
+Additional ligands currently under investigation for other projects are being scrutinised in addition to those already discussed in prior sections.
+All the ligands have been investigated by cyclic voltammetry CV in a wide potential scan rate range (and by differential pulse voltammetry DPV, too), in \(CH_{3}CN\) (in one case also in \(CH_{2}Cl_{2}\)) with 0.1 M tetrabutylammonium hexafluorophosphate, \(TBPF_{6}\) as supporting electrolyte, in a three-electrode minicell (working solution volume = 3 \(cm^{3}\)), including:
+
+\begin{itemize}
+	\item a glassy carbon GC disk electrode (AMEL, geometric surface \(\simeq\) 0.071 \(cm^{2}\)); the electrode surface can be reproducibly cleaned when needed by mechanical treatment with synthetic diamond powder (Aldrich) on a wet cloth (Struers DP-Nap, usually employed for preparation of metal samples) followed by rinsing with deionized water and drying by wiping with porous paper;
+	\item a platinum wire counter electrode;
+	\item a saturated calomel electrode (SCE) as reference electrode, inserted in a glass compartment provided with a porous frit, filled with the working solvent + supporting electrolyte medium, to prevent water and chloride leakage into the working electrode compartment. The potentials were afterwards referred to the formal potential \(E ^{\circ}’\) of the ferricinium\vert ferrocene (\(Fc^{+}|Fc\)) chemically and electrochemically reversible redox couple, measured  vs the operating SCE reference electrode in the same session and in the same conditions, as the average between forward and backward ferrocene CV peak potential); in fact, according to IUPAC\ \cite{gritzner_recommendations_1982} the energetics of the ferrocene couple can be assumed as (approximately) invariant with solvent, and therefore it is usually adopted as intersolvental potential reference, enabling to normalize measurements in different media by elimination of the intersolvental liquid junction potential between the saturated KCl solution of the reference electrode and the working solution. Only after such normalization one can properly evaluate possible solvent effects on the investigated electron transfer process.
+\end{itemize}
+
+The measurements were performed using an Autolab potentiostat managed by a PC with GPES software, also enabling to compensate the ohmic drop by the positive feedback method\ \cite{bard_electrochemical_2001}.
+A synopsis of selected CV patterns recorded at 0.2 \(V/s\) is provided in the figure \ref{fig:synops}, in which currents have been normalized by geometric surface, ligand concentration and square root of potential scan rate (\(I/(Scv^{0.5})\)) [\(A cm^{-2} mol^{-1} dm^{3} V^{-0.5} s^{0.5}\)], and potentials have been normalized vs the Fc+|Fc couple as above mentioned.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=10cm,keepaspectratio]{Images/mussini/secondaimmagine.pdf}
+	\caption{CV pattern synopsis}
+	\label{fig:synops}
+
+\end{figure}
+\newpage
+
+As a very preliminary discussion (a more detailed examination is planned on the
+many acquired CV and DPV data) it can be noticed that in all cases the CV
+patterns are consistent with the electron poor character of the ligands on
+account of their electron attracting -CN and -C=OR substituents (0.66 and \simeq 0.5
+\(\sigma p\) \ Hammett constants respectively\ \cite{hansch_survey_1991}). In particular:
+\begin{itemize}
+	\item only one oxidation process is observable, close to the oxidative background;
+	\item instead a series of subsequent reduction events appear in the available potential window, starting at relatively mild potentials, some of them tending to reversibility from the electrochemical point of view (fast electron transfer with negligible activation barrier, accounted for by the peak potentials being nearly unaffected by the scan rate) and/or from the chemical point of view (rather stable electron transfer product accounted for by the presence of a return peak increasingly symmetrical with increasing scan rate).
+\end{itemize}
+
+For a very preliminary discussion it is convenient to start with the symmetrical DikDiCN case as the ligand series benchmark. Actually, considering the keto-enol tautomerism on the ligand core, DikDiCN might be expected to correspond to a case of two equivalent, reciprocally interacting redox sites, which usually result in a system of two, reciprocally connected, subsequent CV peaks of similar features, their distance accounting for the reciprocal interaction between the equivalent redox sites. This might apply to the first two DikDiCN reduction peaks observed in our CV patterns; however, any conclusion should wait for the planned more exhaustive data examination, since the reductive CV pattern includes more than two peaks, only partially reversible at low/medium scan rate, with formation of some oxidizable products on the electrode surface being observed as a consequence of the reduction events upon repeated potential cycling.
+
+Comparing DikDiCN with DikCN or DikBiCN enables to make a preliminary evaluation of inductive and conjugation effects. It is worthwhile recalling that
+
+\begin{itemize}
+	\item In a systematic series of aromatic/polyconjugated molecules, substituent inductive effects typically result in potential shifts for both first oxidation and first reduction in the same direction (in particular, in positive direction with increasingly electron attracting substituents, making reductions easier but oxidations more difficult, and vice versa in negative direction with increasingly electron donating substituents). Concerning the shift magnitude, (i) it decreases with increasing distance between substituent and redox site; (ii) it is comparable for first oxidation and reduction processes if they involve the same redox site, while it can be significantly different if the two processes are located on different redox sites.
+	\item Radical anion and radical cation formation, i.e. the usual first reductive and oxidative electron transfer processes in a polyaromatic system, are both favoured by an increase in conjugation; thus increasing conjugation efficiency results in both milder oxidation potentials and milder reduction potentials (unlike inductive effects).
+\end{itemize}
+
+Now, asymmetrical DikCN exhibits a CV pattern very similar to the DikDiCN one, but shifted (at least concerning the first and third reduction peaks and the first oxidation peak) by approximately 0.1 V towards more negative/less positive potentials; this is consistent with its featuring only one nitrile group, resulting in a globally lower electron attracting inductive effect, which makes the reduction processes more difficult and the oxidation process easier. A further difference respect to DikDiCN is the decrease in the formation of products on the electrode surface as a consequence of the reduction processes.
+
+Even more conspicuous are the negative shifts of both oxidative and reductive CV peaks of DikBiCN respect to benchmark DikDiCN; and notably, in this case the shifts are of different magnitude although in the same direction; in particular, the shift is more conspicuous for the oxidation process. Possibly, in the biphenyl case on one hand the increase in conjugation efficiency should be only a moderate one on account of the torsional angle between the two phenyl rings, on the other hand the CN and C=O electron attracting substituents would be placed on two different, only partially conjugated aromatic rings, instead than on the same ring; maybe such “dilution” of the inductive effects could prevail on the slight increase of the overall conjugation. In any case, the different magnitudes of the first oxidation and first reduction potential shifts could point to the two processes involving significantly different redox sites (maybe, the reduction one closer to the CN terminals and the oxidation one closer to the core.
+
+The CV patterns recorded for PyrBiCN appear similar (maybe too similar?) to the parent DikBiCN case, but their discussion is difficult since they look much smaller and less defined respect to former cases (in the figure they have been multiplied by a 4 factor respect to DikDiCN). We look forward to performing a check on the sample nature and purity before repeating the CV investigation.
+
+It is worthwhile mentioning that possibly in the DikDiCN and DikBiCN cases the low solubility can be responsible of the lower observed current intensity. However, better resolution might be obtained by analysis of DPV data.
+
+In the case of DikDiCN we also recorded in \(CH_{2}Cl_{2}\) + 0.1 M \(TBAPF_{6}\) the ligand pattern as well as the pattern of its nominal \(Fe(III)(DikDiCN)_{3}\) complex.  As shown in Figure \ref{fig:CVDikDICN} the solvent effect on the electrochemical properties of the ligand after duly normalizing the CV patterns vs the Fc couple only looks a slight one. Of course the \(CH_{2}Cl_{2}\) window is narrower on the reduction side respect to the \(CH_{3}CN\) one on account of the solvent undergoing reduction at much milder potentials; thus the fourth DikDiCN reduction peak is not perceivable in \(CH_{2}Cl_{2}\).
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=8cm,keepaspectratio]{Images/mussini/penultimafigura.pdf}
+	\caption{CV of DikDICN in \(CH_{2}Cl_{2}\)  and \(CH_{3}CN\)}\label{fig:CVDikDICN}
+\end{figure}
+\newpage
+
+\subsection{Monomer and MOFs sets}\label{sec:mofmon}
+
+Initial testing was conducted on the synthetized monomers, revealing the notable existence of ligand residues. In order to carry out electrochemical measurements, it is essential to purify the products, which is planned as a future undertaking following further analysis.
+
+In particular, \([ Fe^{III}(DikDiCN)_{3} ]\) investigation is reported: its CV pattern looked nearly identical to the free ligand (Figure \ref{fig:feCV}).
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=10cm,keepaspectratio]{Images/mussini/ultimafigura.pdf}
+	\caption{Monomer and DikDiCN comparison}\label{fig:feCV}
+\end{figure}
+
+
+For MOFs measurements, the material must be deposited on an electrode in ITO (Indium Tin Oxide). While exploratory tests have been carried out, there is a need for adequate investigation of the deposition procedure and subsequent analysis in the future.
+
+\subsection{Conclusions, considerations and further development}
+
+The research carried out on the electrochemical aspect of these structures in significally interesting both for electrochemists and inorganic chemists. However, to gain a better understanding of the initial observations, further in-depth analyses of the ligands, particularly the monomers and MOFs, are necessary.
+The objective of this section is to compare several series of ligands, monomers and MOFs to identify structural trends within a specific family. Therefore, in order to expand the range of structures, it would be beneficial to synthesise ligands similar to those used in this study.
 \end{document}
 
 %%% Local Variables:

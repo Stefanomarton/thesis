@@ -1,0 +1,17 @@
+
+\begin{minted}{bash}
+
+#!/bin/bash
+
+# Define the directory where you want to search for files
+directory="/your/directory/path"
+
+# Get the current date in the format YYYY-MM-DD
+current_date=$(date +%Y-%m-%d)
+
+	# Find all files created today in the specified directory
+	find "$directory" -type f -newermt "$current_date" ! -newermt "$current_date+1 day" -print0 |
+while IFS= read -r -d '' file; do
+# Execute your Python script on each file
+./myscript.py "$file"
+done
